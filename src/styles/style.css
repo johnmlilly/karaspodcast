@@ -1,4 +1,5 @@
 :root {
+  --fs-small: 0.75rem;
   --fs-300: 0.9375rem;
   --fs-400: 1.0625rem;
   --fs-500: 1.375rem;
@@ -26,16 +27,6 @@
   --clr-neutral-400: hsla(0, 0%, 40%, 1);
   --clr-neutral-500: hsla(0, 0%, 60%, 1);
   --clr-neutral-900: hsla(0, 0%, 10%, 1);
-}
-
-@media (min-width: 600px) {
-  :root {
-    --fs-300: 1rem;
-    --fs-400: 1.125rem;
-    --fs-500: 1.5rem;
-    --fs-600: 2.25rem;
-    --fs-700: 3rem;
-  }
 }
 
 /* //////////////////////
@@ -143,7 +134,7 @@ strong {
 
 section,
 .section {
-  padding: 1.5rem 0;
+  padding: 1.5rem;
 }
 
 
@@ -204,13 +195,14 @@ section,
 .primary-navigation {
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 3rem;
   justify-content: center;
   list-style-type: none;
   border-bottom: 1px solid var(--clr-primary-400);
   padding-block: 0.5rem 1.5rem;
   color: var(--clr-primary-300);
   letter-spacing: 5px;
+  font-size: var(--fs-small);
 }
 
 .primary-header {
@@ -219,6 +211,11 @@ section,
   justify-content: center;
   align-items: center;
   padding: 2rem 5rem;
+}
+
+.primary-header img {
+  width: 400px;
+  object-fit: cover;
 }
 
 .primary-header a:not([role="button"]) {
@@ -358,10 +355,10 @@ footer {
 .episode-preview {
   background-color: var(--clr-white);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-  padding: 1.5rem;
+  padding: 3rem;
   display: grid;
   gap: 3rem;
-  max-width: 1400px;
+  max-width: 1200px;
   margin-inline: auto;
 }
 
@@ -373,7 +370,7 @@ footer {
 }
 
 .episode-preview h2 {
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   letter-spacing: 5px;
   color: var(--clr-primary-300);
   text-transform: uppercase;
@@ -394,6 +391,12 @@ footer {
   justify-content: space-around;
 }
 
+.episode-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem
+}
+
 .episode-preview-text audio {
   width: 100%;
 }
@@ -407,7 +410,7 @@ footer {
 @media (min-width: 992px) {
 
   section, .section {
-    padding: min(10vh, 10em) 0;
+    padding: min(10vh, 4rem) 0;
   }
 
   .hero {
@@ -424,7 +427,7 @@ footer {
     }
 
   .episode-preview {
-    margin-top: -15rem;
+    margin-top: -12rem;
     z-index: 2;
     position: relative;
     grid-template-columns: 0.25fr 0.75fr;
