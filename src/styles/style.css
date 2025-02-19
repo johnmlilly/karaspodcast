@@ -5,17 +5,21 @@
   --fs-600: 1.875rem;
   --fs-700: 2rem;
 
-  --ff-body: "Roboto", sans-serif;
-  --ff-heading: "Playfair Display", serif;
+  --ff-body: "Arial", sans-serif;
+  --ff-heading: "Garamond", serif;
 
   --fw-400: 400;
   --fw-700: 700;
   --fw-900: 900;
+  --clr-white: white;
+  --clr-black-200: #333333;
 
-  --clr-primary-200: hsla(169, 70%, 95%, 1);
-  --clr-primary-300: hsla(169, 100%, 39%, 1);
-  --clr-primary-400: hsla(169, 100%, 26%, 1);
-  --clr-primary-500: hsla(169, 100%, 16%, 1);
+  --clr-primary-300: #66806b;
+  --clr-primary-400: #c1c9ad;
+
+  --clr-secondary-300: #d1947d;
+  --clr-secondary-400: #f8dbd5;
+  --clr-secondary-500: #ffeeea;
 
   --clr-neutral-100: hsla(0, 0%, 100%, 1);
   --clr-neutral-300: hsla(0, 0%, 50%, 1);
@@ -24,7 +28,7 @@
   --clr-neutral-900: hsla(0, 0%, 10%, 1);
 }
 
-@media (min-width: 35em) {
+@media (min-width: 600px) {
   :root {
     --fs-300: 1rem;
     --fs-400: 1.125rem;
@@ -68,13 +72,12 @@ ol:where([role="list"]) {
 }
 
 /* Set core root defaults */
-html:focus-within {
+html {
   scroll-behavior: smooth;
 }
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -89,6 +92,7 @@ img,
 picture {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -101,7 +105,7 @@ select {
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
+  html {
     scroll-behavior: auto;
   }
 
@@ -139,7 +143,7 @@ strong {
 
 section,
 .section {
-  padding: min(10vh, 10em) 0;
+  padding: 1.5rem 0;
 }
 
 
@@ -151,6 +155,7 @@ section,
 /* select all direct childen of .flow
    and add margin to the top for proper
    spacing */
+   
 
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
@@ -196,8 +201,88 @@ section,
   Header
   /////////////////////// */
 
+.primary-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+  list-style-type: none;
+  border-bottom: 1px solid var(--clr-primary-400);
+  padding-block: 0.5rem 1.5rem;
+  color: var(--clr-primary-300);
+  letter-spacing: 5px;
+}
+
+.primary-header {
+  display: grid;
+  grid-template-columns: 0.25fr 0.5fr 0.25fr;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+}
+
+.primary-header a:not([role="button"]) {
+  color: var(--clr-black-200);
+}
+
+.primary-header div {
+  display: flex;
+}
+
+.primary-header div:first-chid {
+  justify-content: start;
+}
+
+.primary-header div:nth-child(2) {
+  justify-content: center;
+}
+
+.primary-header div:last-child {
+  gap: 1rem;
+  align-items: center;
+  justify-content: end;
+}
+
 .page-header {
   padding: 2em 0;
+}
+
+/* Styling for buttons and elements with role="button" */
+button,
+[role="button"] {
+  /* Basic button styling */
+  background-color: var(--clr-primary-300);
+  color: var(--clr-white);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.25rem;
+  font-size: var(--fs-400);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Hover effect for interactive feedback */
+button:hover,
+[role="button"]:hover {
+  background-color: #4d604f;
+  /* A darker shade for hover */
+}
+
+/* Focus styling for accessibility */
+button:focus,
+[role="button"]:focus {
+  outline: 2px solid #555;
+  /* A subtle outline for focus state */
+  outline-offset: 2px;
+}
+
+/* Disabled state for buttons */
+button:disabled,
+[role="button"][aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 .page-header__content {
@@ -225,11 +310,10 @@ section,
   Footer
   /////////////////////// */
 
-.site-footer {
-  --logo-color: currentColor;
-  padding: 2em 0;
-  color: var(--clr-neutral-100);
-  background-color: var(--clr-primary-500);
+footer {
+  padding: 1.5rem 0;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-primary-300);
   text-align: center;
 }
 
@@ -237,24 +321,147 @@ section,
   Homepage
   /////////////////////// */
 
-.hero > div {
-  display: grid;
-  grid-auto-flow: row;
-  grid-auto-columns: 1fr;
-  align-items: center;
-  gap: 3em;
+
+.hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
-.hero__image {
+.hero-image {
   width: 100%;
-  /* max-height: max(15rem, 40vh); */
   object-fit: cover;
 }
 
-@media (min-width: 45em) {
-  .hero > div {
-    grid-auto-flow: column;
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: var(--fs-700);
+  color: var(--clr-white);
+  letter-spacing: 2px;
+}
+
+/* Styles for medium screens, e.g., tablets */
+@media (max-width: 600px) {
+  .hero {
+    height: auto;
   }
+}
+
+.episode-preview {
+  background-color: var(--clr-white);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  padding: 1.5rem;
+  display: grid;
+  gap: 3rem;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+.episode-preview img {
+  height: 300px;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+}
+
+.episode-preview h2 {
+  font-size: var(--fs-600);
+  letter-spacing: 5px;
+  color: var(--clr-primary-300);
+  text-transform: uppercase;
+}
+
+.episode-preview h3 {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+  letter-spacing: 3px;
+  color: var(--clr-primary-300);
+  text-transform: uppercase;
+}
+
+.episode-preview-text {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.episode-preview-text audio {
+  width: 100%;
+}
+
+/* Target the controls in browsers that support custom styling */
+.episode-preview-text audio::-webkit-media-controls-panel {
+  background-color: #66806b;
+  /* Your primary color */
+}
+
+@media (min-width: 992px) {
+
+  section, .section {
+    padding: min(10vh, 10em) 0;
+  }
+
+  .hero {
+    height: 850px;
+  }
+
+  .hero-content {
+      left: 20%;
+    }
+  
+    .hero-content h1 span {
+      display: inline-block;
+      font-size: 8rem;
+    }
+
+  .episode-preview {
+    margin-top: -15rem;
+    z-index: 2;
+    position: relative;
+    grid-template-columns: 0.25fr 0.75fr;
+  }
+}
+
+.podcast-description {
+  padding-block: 4rem;
+  max-width: 1000px;
+  margin-inline: auto;
+  text-align: center;;
+}
+
+.podcast-description h2 {
+  font-size: var(--fs-700);
+  color: var(--clr-primary-300);
+  line-height: 1.6;
+  padding-block: 0 1.5rem;
+}
+
+.podcast-description p {
+  color: var(--clr-primary-300);
+  padding-block: 1rem;
+  line-height: 1.6;
+}
+
+.podcast-icons {
+  padding-block: 2rem;
+  font-size: 2rem;
+}
+
+.podcast-icons h3 {
+  padding-bottom: .75rem;
+  font-size: var(--fs-500);
+  font-weight: var(--fw-400);
+  color: var(--clr-secondary-400);
+  text-transform: uppercase;
 }
 
 .featured-articles {
