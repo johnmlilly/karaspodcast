@@ -4,36 +4,83 @@ layout: 'base.njk'
 
 <section class="hero">
   <img src="/assets/matt-botsford-OKLqGsCT8qs-unsplash.jpg" alt="Hero Image" class="hero-image">
-  <div class="hero-content">
-    <h1>
-      everything is <br><span>GRACE</span><br> podcast
-    </h1>
-  </div>
-</section>
-<section>
-  <div class="episode-preview">
-    <img src="https://fakeimg.pl/400x400" alt="Intro Episode Image">
-    <div class="episode-preview-text">
-      <div class="episode-heading">
-        <h2>Intro Episode: Finding Grace in Everyday</h2>
-        <h3>Kara Loryn Lilly</h3>
-      </div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et
-        ultrices posuere cubilia curae; Nullam quis lacus non dolor tincidunt tincidunt. Nullam ac blandit massa.</p>
-      <audio controls>
-        <source src="path/to/your/placeholder-audio.mp3" type="audio/mpeg"> Your browser does not support the audio element.
-      </audio>
-    </div>
-  </div>
-  <div class="podcast-description">
-    <h2>A Compelling Elevator Pitch for the Podcast</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-      aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-      aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    <div class="podcast-icons">
-      <h3>Tune In</h3>
-      <i class="bi bi-apple" title="Apple Podcasts"></i>
-      <i class="bi bi-spotify" title="Spotify"></i>
-    </div>
-  </div>
-</section>
+    <div class="hero-content">
+      <h1>
+        everything is
+        <br>
+          <span>GRACE</span>
+          <br>
+            podcast
+          </h1>
+        </div>
+      </section>
+      <section>
+        <div class="episode-feature">
+          <img src="https://fakeimg.pl/400x400" alt="Intro Episode Image">
+            <div class="episode-feature__text">
+              <div class="episode-feature__heading">
+                <h2>Intro Episode: Finding Grace in Everyday</h2>
+                <h3>Kara Loryn Lilly</h3>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et
+                ultrices posuere cubilia curae; Nullam quis lacus non dolor tincidunt tincidunt. Nullam ac blandit massa.</p>
+              <audio controls>
+                <source src="path/to/your/placeholder-audio.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+            <div class="podcast-description">
+              <h2>A Compelling Elevator Pitch for the Podcast</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <div class="podcast-icons">
+                <h3>Tune In</h3>
+                <i class="bi bi-apple" title="Apple Podcasts"></i>
+                <i class="bi bi-spotify" title="Spotify"></i>
+              </div>
+            </div>
+          </section>
+          <section class="bg-background-secondary-300">
+            <div class="featured-episode">
+              <div class="margin-block-3">
+                <h2>Check out these trending episodes to get started.</h2>
+                {%- for episode in collections.episode -%}
+                  <div class="episode-list {% if loop.last %} episode-list--last{% endif %}">
+                    <span>{{ episode.data.episodeNumber }}</span>
+                    <h3>{{ episode.data.title }}</h3>
+                    <a href="{{ episode.url }}">
+                      <svg
+                        fill="#66806b"
+                        height="75px"
+                        width="75px"
+                        version="1.1"
+                        id="Layer_1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewbox="0 0 512 512"
+                        xml:space="preserve">
+                        <g>
+                          <g>
+                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496
+                            C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16 		"/>
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
+                  </div>
+                {%- endfor -%}
+              </div>
+              <div class="featured-episode__media">
+                <img
+                  src="/assets/episodes/podcast-iphone-frame.png"
+                  alt="Phone displaying podcast player"
+                  class="featured-episode__phone"></div>
+              </div>
+            </section>
