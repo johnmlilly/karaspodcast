@@ -6,7 +6,7 @@ description: "Kara dives into how grace can shine through life’s messiest mome
 image: "/assets/podcast/episode-2.jpg"
 imageAlt: "A stormy sky breaking into sunlight"
 duration: "00:32:15"
-episodeNumber: "01"
+episodeNumber: "02"
 audioFile: "/assets/audio/episode-2.mp3"
 tags: ["grace", "life", "resilience"]
 ---

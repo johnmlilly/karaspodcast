@@ -6,7 +6,7 @@ description: "Kara reflects on how grace transforms relationships, from friendsh
 image: "/assets/podcast/episode-3.jpg"
 imageAlt: "Two hands clasped in friendship"
 duration: "00:28:45"
-episodeNumber: "02"
+episodeNumber: "03"
 audioFile: "/assets/audio/episode-3.mp3"
 tags: ["relationships", "grace", "connection"]
 ---

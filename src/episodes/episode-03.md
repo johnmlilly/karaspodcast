@@ -1,12 +1,12 @@
 ---
-title: "Everyday Grace"
+title: "Everyday Grace For Catholics"
 host: "Kara Loryn Lilly"
 date: "2025-02-22"
 description: "Kara uncovers the small, often unnoticed moments of grace in daily life, encouraging listeners to see beauty in the ordinary."
 image: "/assets/podcast/episode-4.jpg"
 imageAlt: "A cup of coffee on a cozy table"
 duration: "00:30:00"
-episodeNumber: "03"
+episodeNumber: "04"
 audioFile: "/assets/audio/episode-4.mp3"
 tags: ["daily-life", "grace", "mindfulness"]
 ---

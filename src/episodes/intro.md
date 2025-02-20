@@ -1,12 +1,12 @@
 ---
-title: "Introduction to Everything is Grace"
+title: "Everything is Grace"
 host: "Kara Loryn Lilly"
 date: "2025-02-01"
 description: "Join host Kara Loryn Lilly as she introduces the Everything is Grace Podcast, sharing her vision for exploring faith, life, and grace in everyday moments."
 image: "/assets/podcast/episode-1.jpg"
 imageAlt: "Kara Loryn Lilly smiling in a serene setting"
 duration: "00:25:30"
-episodeNumber: "INTRO"
+episodeNumber: "01"
 audioFile: "/assets/audio/episode-1.mp3"
 tags: ["intro", "faith", "podcast"]
 ---
