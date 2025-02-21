@@ -34,6 +34,13 @@
   RESET - source: https://piccalil.li/blog/a-modern-css-reset
   /////////////////////// */
 
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -60,7 +67,6 @@ ol:where([role="list"]) {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  box-sizing: border-box;
 }
 
 /* Set core body defaults */
@@ -71,7 +77,6 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-400);
   color: var(--clr-neutral-900);
-  position: relative;
 }
 
 /* A elements that don't have a class get default styles */
