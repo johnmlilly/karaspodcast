@@ -13,74 +13,101 @@ layout: 'base.njk'
             podcast
           </h1>
         </div>
-      </section>
-      <section>
-        <div class="episode-feature">
-          <img src="https://fakeimg.pl/400x400" alt="Intro Episode Image">
-            <div class="episode-feature__text">
-              <div class="episode-feature__heading">
-                <h2>Intro Episode: Finding Grace in Everyday</h2>
-                <h3>Kara Loryn Lilly</h3>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et
-                ultrices posuere cubilia curae; Nullam quis lacus non dolor tincidunt tincidunt. Nullam ac blandit massa.</p>
-              <audio controls>
-                <source src="path/to/your/placeholder-audio.mp3" type="audio/mpeg">
-                  Your browser does not support the audio element.
-                </audio>
-              </div>
-            </div>
-            <div class="podcast-description">
-              <h2>A Compelling Elevator Pitch for the Podcast</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-              <div class="podcast-icons">
-                <h3>Tune In</h3>
-                <i class="bi bi-apple" title="Apple Podcasts"></i>
-                <i class="bi bi-spotify" title="Spotify"></i>
-              </div>
-            </div>
-          </section>
-          <section class="bg-background-secondary-300">
-            <div class="featured-episode">
-              <div class="margin-block-3">
-                <h2>Check out these trending episodes to get started.</h2>
-                {%- for episode in collections.episode -%}
-                  <div class="episode-list {% if loop.last %} episode-list--last{% endif %}">
-                    <span>{{ episode.data.episodeNumber }}</span>
-                    <h3>{{ episode.data.title }}</h3>
-                    <a href="{{ episode.url }}">
-                      <svg
-                        fill="#66806b"
-                        height="50px"
-                        width="50px"
-                        version="1.1"
-                        id="Layer_1"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        viewbox="0 0 512 512"
-                        xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496
-                            C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <polygon points="189.776,141.328 189.776,370.992 388.672,256.16 		"/>
-                          </g>
-                        </g>
-                      </svg>
-                    </a>
-                  </div>
-                {%- endfor -%}
-              </div>
-              <div class="featured-episode__media">
-                <img
-                  src="/assets/episodes/podcast-iphone-frame.png"
-                  alt="Phone displaying podcast player"
-                  class="featured-episode__phone"></div>
-              </div>
-            </section>
+</section>
+<section>
+  <div class="episode-feature">
+    <img src="https://fakeimg.pl/400x400" alt="Intro Episode Image">
+      <div class="episode-feature__text">
+        <div class="episode-feature__heading">
+          <h2>Intro Episode: Finding Grace in Everyday</h2>
+          <h3>Kara Loryn Lilly</h3>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et
+          ultrices posuere cubilia curae; Nullam quis lacus non dolor tincidunt tincidunt. Nullam ac blandit massa.</p>
+        <audio controls>
+          <source src="path/to/your/placeholder-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+    </div>
+    <div class="podcast-description">
+      <h2>A Compelling Elevator Pitch for the Podcast</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="podcast-icons">
+        <h3>Tune In</h3>
+        <i class="bi bi-apple" title="Apple Podcasts"></i>
+        <i class="bi bi-spotify" title="Spotify"></i>
+      </div>
+    </div>
+</section>
+<section class="bg-background-secondary-300">
+  <div class="featured-episode">
+    <div class="margin-block-3">
+      <h2>Check out these trending episodes to get started.</h2>
+      {%- for episode in collections.episode -%}
+        <div class="episode-list {% if loop.last %} episode-list--last{% endif %}">
+          <span>{{ episode.data.episodeNumber }}</span>
+          <h3>{{ episode.data.title }}</h3>
+          <a href="{{ episode.url }}">
+            <svg
+              fill="#66806b"
+              height="50px"
+              width="50px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewbox="0 0 512 512"
+              xml:space="preserve">
+              <g>
+                <g>
+                  <path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496
+                  C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z"/>
+                </g>
+              </g>
+              <g>
+                <g>
+                  <polygon points="189.776,141.328 189.776,370.992 388.672,256.16 		"/>
+                </g>
+              </g>
+            </svg>
+          </a>
+        </div>
+      {%- endfor -%}
+    </div>
+    <div class="featured-episode__media">
+      <img
+        src="/assets/episodes/podcast-iphone-frame.png"
+        alt="Phone displaying podcast player"
+        class="featured-episode__phone"></div>
+  </div>
+</section>
+<section class='host-profile--background '>
+  <div class="host-profile">
+    <div>
+      <img src="/assets/headshots/meet-kara-loryn-wedding-photographer-4.jpg" alt="Kara Lilly" />
+    </div>
+    <div>
+      <span>MEET YOUR HOST</span>
+      <h2>Kara Loryn Lilly</h2>
+      <p>You may know me as a Christain wedding and lifestyle photographer around here, now showing up with a new gadget in my hands instead of a camera - a microphone. I'm still your favorite Jesus lovin', Marvel movie bingin' , local coffee shop huntin', wife and mama!</p>
+      <p>Now you can add this to the list: your favorite Christain podcaste. I'm here to talk about how you can find grace in your every day. When going gets tough, we will see how God is with you. When things are amazing, we will explore how to praise Him. I can't wait to have you listen in!</p>
+      <a role="button" class="btn--secondary" href="/">Listen Now <i class="bi bi-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+<section class="pb-0">
+  <div class="instagram-profile">
+      <h2>FOLLOW ME!</h2>
+      <div class="instagram-profile--follow">
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-facebook"></i>
+        <a href="https://www.instagram.com/karalorynlilly/" target="_blank" rel="noopener noreferrer">@KaraLorynLilly</a>
+      </div>
+  </div>
+  <!-- SnapWidget -->
+    <script defer src="https://snapwidget.com/js/snapwidget.js"></script>
+    <iframe src="https://snapwidget.com/embed/890826" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; pointer-events: none;" title="Posts from Instagram"></iframe>
+</section>
