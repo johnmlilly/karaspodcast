@@ -15,28 +15,28 @@ export default async function(eleventyConfig) {
 
     // Social Media Meta Data
     eleventyConfig.addPlugin(metagen);
+  
     //Eleventy Image Plugin
     // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-	eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-		// Output formats for each image.
-		formats: ["webp", "auto"],
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+      // Output formats for each image.
+      formats: ["webp", "auto"],
 
-		// widths: ["auto"],
+      // widths: ["auto"],
 
-		failOnError: false,
-		htmlOptions: {
-			imgAttributes: {
-				// e.g. <img loading decoding> assigned on the HTML tag will override these values.
-				loading: "lazy",
-				decoding: "async",
-			}
-		},
+      failOnError: false,
+      htmlOptions: {
+        imgAttributes: {
+          // e.g. <img loading decoding> assigned on the HTML tag will override these values.
+          loading: "lazy",
+          decoding: "async",
+        }
+      },
 
-		sharpOptions: {
-			animated: true,
-		},
+      sharpOptions: {
+        animated: true,
+      },
 	});
-
 
     // Get current year for footer
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
