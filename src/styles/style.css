@@ -521,6 +521,8 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 .host-profile--background {
