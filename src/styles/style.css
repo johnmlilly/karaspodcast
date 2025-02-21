@@ -156,6 +156,10 @@ section,
   margin-block: 3rem;
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
+
 .flow > *:where(:not(:first-child)) {
   margin-top: var(--flow-spacer, 1em);
 }
@@ -259,8 +263,8 @@ button,
   background-color: var(--clr-primary-300);
   color: var(--clr-white);
   border: none;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
   font-size: var(--fs-400);
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -273,6 +277,20 @@ button:hover,
 [role="button"]:hover {
   background-color: #4d604f;
   /* A darker shade for hover */
+}
+
+button.btn--secondary,
+[role="button"].btn--secondary {
+  background-color: var(--clr-secondary-400);
+  color: var(--clr-secondary-300);
+  padding: 0.75rem 2rem;
+}
+
+/* Optional: Maintain hover effect for secondary buttons */
+button.btn--secondary:hover,
+[role="button"].btn--secondary:hover {
+  background-color: var(--clr-secondary-300);
+  /* Darker shade for hover, if desired */
 }
 
 /* Focus styling for accessibility */
@@ -499,13 +517,91 @@ footer {
   font-size: var(--fs-xl);
 }
 
-.featured-articles {
-  background-color: var(--clr-primary-200);
+.host-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-.articles__list {
-  --flow-spacer: 3rem;
-  margin: 6rem 0;
+.host-profile--background {
+  background-image: url('/assets/episodes/pexels-dudubangbang-30791001.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+/* Overlay using ::before pseudo-element */
+.host-profile--background::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  height: 100%;
+  background-color: #905136;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+/* Ensure content inside .host-profile--background stays above the overlay */
+.host-profile--background>* {
+  position: relative;
+  z-index: 2;
+}
+
+.host-profile img {
+  aspect-ratio: 1 /1;
+  object-fit: cover;
+}
+
+.host-profile span {
+  font-size: var(--fs-small);
+  letter-spacing: 3px;
+  color: var(--clr-secondary-400);
+}
+
+.host-profile h2 {
+  font-size: var(--fs-xl);
+  padding-block: 1.5rem;
+  color: var(--clr-secondary-400);
+}
+
+.host-profile p {
+  color: var(--clr-white);
+  padding-block: 0 1.5rem
+}
+
+.recent-episode-list {
+  display: inline;
+}
+
+.testimonials {
+  display: inline;
+}
+
+.guest-contact {
+  display: block;
+}
+
+/* Optional: Overlay a clickable area to ensure the link works */
+.instagram-profile {
+  color: var(--clr-secondary-300);
+  padding-block: 0 1.5rem;
+  text-align: center;
+}
+
+.instagram-profile--follow {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  font-size: 1rem;
+  padding-block: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.instagram-profile--follow a {
+  text-decoration: none;
+  color: var(--clr-secondary-300)
 }
 
 /* //////////////////////
@@ -663,4 +759,11 @@ footer {
       display: block;
     }
 
+    .host-profile {
+      flex-direction: row;
+    }
+
+    .host-profile img {
+      height: 400px;
+    }
 }
