@@ -34,13 +34,6 @@
   RESET - source: https://piccalil.li/blog/a-modern-css-reset
   /////////////////////// */
 
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 /* Remove default margin */
 body,
 h1,
@@ -66,12 +59,19 @@ ol:where([role="list"]) {
 /* Set core root defaults */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
+  font-family: var(--ff-body);
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-900);
+  position: relative;
 }
 
 /* A elements that don't have a class get default styles */
@@ -115,12 +115,6 @@ select {
   General styling
   /////////////////////// */
 
-body {
-  font-family: var(--ff-body);
-  font-size: var(--fs-400);
-  color: var(--clr-neutral-900);
-}
-
 h1,
 h2,
 h3 {
@@ -135,9 +129,8 @@ strong {
 
 section,
 .section {
-  padding: min(10vh, 4rem);
+  padding: 1.5rem;
 }
-
 
 
 /* //////////////////////
@@ -207,11 +200,11 @@ section,
 .primary-navigation {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
   justify-content: center;
   list-style-type: none;
   border-bottom: 1px solid var(--clr-primary-400);
-  padding-block: 0.5rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   color: var(--clr-primary-300);
   letter-spacing: 5px;
   font-size: var(--fs-small);
@@ -727,6 +720,15 @@ footer {
 }
 
 @media (min-width: 992px) {
+
+section, .section {
+  padding: min(10vh, 4rem);
+}
+
+.primary-navigation {
+  gap: 3rem;
+  padding: 0.5rem 1.5rem;
+}
 
   .hero {
     height: 850px;
