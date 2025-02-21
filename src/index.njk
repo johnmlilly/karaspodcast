@@ -50,7 +50,7 @@ layout: 'base.njk'
         <div class="episode-list {% if loop.last %} episode-list--last{% endif %}">
           <span>{{ episode.data.episodeNumber }}</span>
           <h3>{{ episode.data.title }}</h3>
-          <a href="{{ episode.url }}">
+          <a href="{{ episode.url }}" aria-label="Click to play episode {{ episode.data.title}}">
             <svg
               fill="#66806b"
               height="50px"
