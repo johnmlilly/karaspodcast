@@ -37,8 +37,8 @@ layout: 'base.njk'
         aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       <div class="podcast-icons">
         <h3>Tune In</h3>
-        <i class="bi bi-apple" title="Apple Podcasts"></i>
-        <i class="bi bi-spotify" title="Spotify"></i>
+        <i class="fa-brands fa-spotify"></i>
+        <i class="fa-solid fa-podcast"></i>
       </div>
     </div>
 </section>
@@ -94,10 +94,42 @@ layout: 'base.njk'
       <h2>Kara Loryn Lilly</h2>
       <p>You may know me as a Christain wedding and lifestyle photographer around here, now showing up with a new gadget in my hands instead of a camera - a microphone. I'm still your favorite Jesus lovin', Marvel movie bingin' , local coffee shop huntin', wife and mama!</p>
       <p>Now you can add this to the list: your favorite Christain podcaste. I'm here to talk about how you can find grace in your every day. When going gets tough, we will see how God is with you. When things are amazing, we will explore how to praise Him. I can't wait to have you listen in!</p>
-      <a role="button" class="btn--secondary" href="/">Listen Now <i class="bi bi-arrow-right"></i></a>
+      <a role="button" class="btn--secondary" href="/">Listen Now </a>
     </div>
   </div>
 </section>
+<section>
+  <h2 class="recent-episodes-heading ">RECENT EPISODES</h2>
+  <div class="recent-episodes">
+    {% include "recent-episodes.njk" %}
+  </div>
+</section>
+<section class="px-0 open-quote">
+  <div class="testimonials">
+      <button class="a11y-slider-prev" aria-label="Previous testimonial"></button>
+      <ul class="slider">
+       <li>
+          <blockquote>"This podcast changed my perspective on grace—highly recommend!"</blockquote>
+          <p>Jane Doe, Listener</p>
+        </li>
+        <li>
+          <blockquote>"This podcast changed my perspective on grace—highly recommend!"</blockquote>
+          <p>Jane Doe, Listener</p>
+        </li>
+        <li>
+          <blockquote>"Kara’s insights are inspiring and thought-provoking."</blockquote>
+          <p>John Smith, Subscriber</p>
+        </li>
+        <li>
+          <blockquote>"A beautiful blend of faith and life lessons—love this show!"</blockquote>
+          <p>Sarah Johnson, Fan</p>
+        </li>
+      </ul>
+      <button class="a11y-slider-next" aria-label="Next testimonial"></button>
+  
+  </div>
+</section>
+
 <section class="pb-0">
   <div class="instagram-profile">
       <h2>FOLLOW ME!</h2>

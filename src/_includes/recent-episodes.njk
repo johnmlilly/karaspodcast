@@ -1,0 +1,7 @@
+{%- for episode in collections.episode | reverse -%}
+    <div class="recent-episodes--cards">
+      <img src="https://fakeimg.pl/500x500" alt="{{ episode.data.title }}" />
+        <span>EPISODE {{ episode.data.episodeNumber }}</span>
+      <h3>{{ episode.data.title }}</h3>
+    </div>
+{%- endfor -%}
