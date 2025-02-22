@@ -1,41 +1,46 @@
 import { DateTime } from "luxon";
 import metagen from "eleventy-plugin-metagen";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import fontAwesomePlugin from "@11ty/font-awesome";
 
 export default async function(eleventyConfig) {
     
-    eleventyConfig.addPassthroughCopy('./src/styles');
-    eleventyConfig.addPassthroughCopy('./src/assets') ;
-    eleventyConfig.addPassthroughCopy('./src/scripts');
-    eleventyConfig.addPassthroughCopy('./src/admin');
+  eleventyConfig.addPassthroughCopy('./src/styles');
+  eleventyConfig.addPassthroughCopy('./src/assets') ;
+  eleventyConfig.addPassthroughCopy('./src/scripts');
+  eleventyConfig.addPassthroughCopy('./src/admin');
 
-    // Watch images for the image pipeline.
-    eleventyConfig.addWatchTarget("./src/assets/**/*.{svg,webp,png,jpg,jpeg,gif}");
-    eleventyConfig.addWatchTarget("./src/styles");
-
-    // Social Media Meta Data
-    eleventyConfig.addPlugin(metagen);
+  // Watch images for the image pipeline.
+  eleventyConfig.addWatchTarget("./src/assets/**/*.{svg,webp,png,jpg,jpeg,gif}");
+  eleventyConfig.addWatchTarget("./src/styles");
+  eleventyConfig.addWatchTarget("./src/scripts");
   
-    //Eleventy Image Plugin
-    // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
-    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
-      // Output formats for each image.
-      formats: ["webp", "auto"],
+  // Social Media Meta Data
+  eleventyConfig.addPlugin(metagen);
+  
+  //Add Font Awesome Icons
+  eleventyConfig.addPlugin(fontAwesomePlugin)
+  
+  //Eleventy Image Plugin
+  // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    // Output formats for each image.
+    formats: ["webp", "auto"],
 
-      // widths: ["auto"],
+    // widths: ["auto"],
 
-      failOnError: false,
-      htmlOptions: {
-        imgAttributes: {
-          // e.g. <img loading decoding> assigned on the HTML tag will override these values.
-          loading: "lazy",
-          decoding: "async",
-        }
-      },
+    failOnError: false,
+    htmlOptions: {
+      imgAttributes: {
+        // e.g. <img loading decoding> assigned on the HTML tag will override these values.
+        loading: "lazy",
+        decoding: "async",
+      }
+    },
 
-      sharpOptions: {
-        animated: true,
-      },
+    sharpOptions: {
+      animated: true,
+    },
 	});
 
     // Get current year for footer
