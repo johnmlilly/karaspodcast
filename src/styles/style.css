@@ -640,8 +640,8 @@ footer {
   content: open-quote;
   /* Open quote mark */
   position: absolute;
-  top: 45px;
-  left: 50%;
+  top: 0;
+  left: 45%;
   font-size: 5rem;
   color: var(--clr-primary-300);
   z-index: 1;
@@ -653,9 +653,32 @@ footer {
 
 .slider {
   display: flex;
-  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
 }
 
+.slider > * {
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+@media (min-width: 768px) {
+  .slider > * {
+    width: 50%;
+  }
+}
+
+@media (min-width: 960px) {
+  .slider > * {
+    width: 33.3333%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .slider > * {
+    width: 25%;
+  }
+}
 .slider>* {
   position: relative;
   flex: 0 0 auto;
@@ -667,60 +690,44 @@ footer {
   gap: 1rem;
 }
 
-.slider blockquote {
+.slider div {
   margin-inline: auto;
   font-size: var(--fs-600);
   text-align: center;
 }
 
-/* Style arrows as arrows, not buttons */
-.a11y-slider-prev,
-.a11y-slider-next {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-size: 24px;
-  color: var(--clr-secondary-300);
-  /* Your primary color */
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1;
+.a11y-slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-block: 1.5rem;
+  gap: 1.5rem;
+  padding: 0;
 }
 
-.a11y-slider-prev {
-  left: 10px;
+.a11y-slider-dots li {
+  display: block;
+  width: 16px;
+  height: 16px;
 }
 
-.a11y-slider-next {
-  right: 10px;
+.a11y-slider-dots li button {
+  display: block;
+  font-size: 0;
+  text-indent: -9999px;
+  background: transparent;
+  border: 1px solid var(--clr-secondary-300);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  padding: 0;
 }
 
-/* Use Unicode or custom icons for arrows */
-.a11y-slider-prev::before {
-  content: '◀';
-  /* Left arrow Unicode */
+.a11y-slider-dots li button.active {
+  background: var(--clr-secondary-300);
 }
 
-.a11y-slider-next::before {
-  content: '▶';
-  /* Right arrow Unicode */
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .slider__slide {
-    max-width: 300px;
-    /* Smaller slides on mobile */
-  }
-
-  .a11y-slider-prev,
-  .a11y-slider-next {
-    font-size: 18px;
-    /* Smaller arrows on mobile */
-    padding: 5px;
-  }
+.a11y-slider-autoplay {
+  display: none;
 }
 
 .guest-contact {
@@ -741,6 +748,12 @@ footer {
   font-size: 1rem;
   padding-block: 0.5rem 0;
   text-transform: uppercase;
+}
+
+.instagram-profile--follow svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--clr-secondary-300);
 }
 
 .instagram-profile--follow a {
@@ -919,4 +932,10 @@ section, .section {
     .host-profile img {
       height: 400px;
     }
+
+        /* Add open quote mark using ::before */
+        .open-quote::before {
+          top: 45px;
+          left: 48%;
+        }
 }
