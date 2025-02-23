@@ -1,7 +1,6 @@
 import { DateTime } from "luxon";
 import metagen from "eleventy-plugin-metagen";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
-import fontAwesomePlugin from "@11ty/font-awesome";
 
 export default async function(eleventyConfig) {
     
@@ -17,10 +16,7 @@ export default async function(eleventyConfig) {
   
   // Social Media Meta Data
   eleventyConfig.addPlugin(metagen);
-  
-  //Add Font Awesome Icons
-  eleventyConfig.addPlugin(fontAwesomePlugin)
-  
+    
   //Eleventy Image Plugin
   // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
