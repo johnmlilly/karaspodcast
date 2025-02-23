@@ -731,7 +731,17 @@ footer {
 }
 
 .guest-contact {
-  display: block;
+  padding: 3rem;
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: var(--clr-secondary-500);
+  border-radius: 0.25rem;
+}
+
+.guest-contact h2 {
+  color: var(--clr-primary-300);
+  font-size: var(--fs-xl);
+  padding-block: 0 1rem;
 }
 
 /* Optional: Overlay a clickable area to ensure the link works */
@@ -762,18 +772,68 @@ footer {
 }
 
 /* //////////////////////
-  Individual article page
+ Form Styling
   /////////////////////// */
 
-  .main-article {
-    margin-bottom: 3rem;
-  }
+.form-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
 
-  .main-article__figure figcaption {
-    margin: 1rem 0;
-    font-size: var(--fs-300);
-    opacity: .9;
-  }
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.form-group {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-group button {
+  display: flex;
+  align-items: start;
+  justify-self: end;
+  height: fit-content;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--clr-secondary-300)
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--clr-secondary-300);
+  border-radius: 2rem;
+  box-sizing: border-box;
+  background-color: transparent;
+  color: var(--clr-secondary-300);
+}
+
+input::placeholder, textarea::placeholder {
+  opacity: 0.75;
+  color: var(--clr-secondary-300)
+}
+
+textarea {
+  min-height: 13rem;
+  margin-bottom: 1rem;
+  resize: none;
+}
+
+input :placeholder-shown
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
 
 /* //////////////////////
   Article snippets

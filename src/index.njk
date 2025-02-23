@@ -19,7 +19,7 @@ layout: 'base.njk'
     <img src="https://fakeimg.pl/400x400" alt="Intro Episode Image">
       <div class="episode-feature__text">
         <div class="episode-feature__heading">
-          <h2>Intro Episode: Finding Grace in Everyday</h2>
+          <h2>Intro Episode: Welcome to the Everything is Grace Podcast!</h2>
           <h3>Kara Loryn Lilly</h3>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et
@@ -125,7 +125,75 @@ layout: 'base.njk'
       </ul>  
   </div>
 </section>
+<section>
+  <div class="guest-contact">
+    <h2>Be a Guest on the Podcast!</h2>
+    <p>Do you have a story of God’s grace to share? Are you passionate about faith-filled living, relationships, personal growth, or Catholic life? I’d love to hear from you!</p>
 
+  <div class="form-container">
+    <form>
+      <div class="form-group">
+          <div>
+            <label for="fullName">Full Name</label>
+            <input 
+              type="text" 
+              id="fullName" 
+              name="fullName" 
+              required 
+              minlength="2" 
+              pattern="[A-Za-z\s]+"
+              placeholder="FULL NAME">
+          </div>
+
+          <div>
+            <label for="businessName">Business Name</label>
+            <input 
+              type="text" 
+              id="businessName" 
+              name="businessName" 
+              required 
+              minlength="2" 
+              pattern="[A-Za-z0-9\s]+"
+              placeholder="BUSINESS NAME">
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              required 
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              placeholder="EMAIL ADDRESS">
+          </div>
+
+          <div>
+            <label for="website">Website</label>
+            <input 
+              type="url" 
+              id="website" 
+              name="website" 
+              required
+              placeholder="WEBSITE">      
+          </div>
+        </div>
+        <div class="form-group">
+        <div>
+          <label for="topic">Topic of Discussion</label>
+          <textarea 
+            id="topic" 
+            name="topic" 
+            required 
+            placeholder="TOPIC OF DISCUSSION">
+          </textarea>
+           <button class="btn--secondary" type="submit">SUBMIT</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
 <section class="pb-0">
   <div class="instagram-profile">
       <h2>FOLLOW ME!</h2>
