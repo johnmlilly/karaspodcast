@@ -102,6 +102,15 @@ layout: 'base.njk'
   <div class="recent-episodes">
     {% include "recent-episodes.njk" %}
   </div>
+  <!--
+  {% if collections.episode and collections.episode.length > 8 %}
+    <section>
+      <h2 class="recent-episodes-heading ">RECENT EPISODES</h2>
+      <div class="recent-episodes">
+        {% include "recent-episodes.njk" %}
+      </div>
+    </section>
+  {% endif %} -->
 </section>
 <section class="px-0 open-quote">
   <div class="testimonials">
