@@ -447,7 +447,7 @@ footer {
 }
 
 .podcast-description {
-  padding-block: 4rem;
+  padding-block: 4rem 0;
   max-width: 1000px;
   margin-inline: auto;
   text-align: center;;
@@ -486,8 +486,6 @@ footer {
 
 .featured-episode {
   display: grid;
-  padding-block: 0 3rem;
-  gap: 5rem;
   align-items: center;
   max-width: 1400px;
   margin-inline: auto;
@@ -513,9 +511,9 @@ footer {
 
 .episode-list {
   display: grid;
-  gap: 1.5rem;
+  gap: 0.5rem;
+  grid-template-areas: "number number" "title play";
   grid-template-columns: auto;
-  align-items: center;
   padding: 3rem 0;
   border-top: 1px solid var(--clr-secondary-300);
   border-bottom: px solid var(--clr-secondary-300);
@@ -526,13 +524,19 @@ footer {
 }
 
 .episode-list h3 {
+  grid-area: title;
   color: var(--clr-primary-300);
   font-size: var(--fs-600);
 }
 
 .episode-list span {
+  grid-area: number;
   color: var(--clr-secondary-300);
   font-size: var(--fs-xl);
+}
+
+.episode-list a {
+  grid-area: play;
 }
 
 .host-profile {
@@ -618,8 +622,9 @@ footer {
 }
 
 .recent-episodes--cards span {
-  font-size: 1rem;
+  font-size: 1.25rem;
   text-transform: uppercase;
+  color: var(--clr-primary-300)
 }
 
 .testimonials {
@@ -971,7 +976,7 @@ textarea {
 @media (min-width: 992px) {
 
 section, .section {
-  padding: min(10vh, 4rem);
+  padding: min(10vh, 4rem) 1.5rem;
 }
 
 .primary-navigation {
@@ -1004,12 +1009,15 @@ section, .section {
   }
 
   .episode-list {
+    grid-template-areas: "number title play";
     grid-template-columns: 0.25fr 1fr auto;
-    gap: 0;
+    gap: 1.5rem;
   }
 
   .featured-episode {
     grid-template-columns: 0.75fr 0.25fr;
+    gap: 5rem;
+    padding-block: 0 3rem;
   }
 
     .featured-episode__phone {
