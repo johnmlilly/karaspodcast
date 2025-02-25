@@ -26,6 +26,7 @@
     "luxon": "^3.5.0"
   },
   "dependencies": {
+    "@netlify/plugin-csp-nonce": "^1.4.0",
     "a11y-slider": "^0.4.22"
   }
 }
