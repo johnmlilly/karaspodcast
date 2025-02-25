@@ -1,16 +1,16 @@
 ---
-title: "Grace in Relationships"
+title: "Grace Begins in You: How Your Thoughts Shape Your Faith & Life"
 host: "Kara Loryn Lilly"
-date: "2025-02-15"
-description: "Kara reflects on how grace transforms relationships, from friendships to family ties, with stories and tips for fostering connection."
+date: "2025-02-08"
+description: "Kara dives into how grace can shine through life’s messiest moments, offering insights and stories to inspire calm amidst the storm."
 image: ""
-imageAlt: "Two hands clasped in friendship"
-duration: "00:28:45"
-episodeNumber: "03"
-audioFile: "/assets/audio/episode-3.mp3"
-tags: ["relationships", "grace", "connection"]
+imageAlt: "A stormy sky breaking into sunlight"
+duration: "00:32:15"
+episodeNumber: "02"
+audioFile: "/assets/audio/episode-2.mp3"
+tags: ["grace", "life", "resilience"]
 ---
 
-In iaculis nunc sed augue lacus. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. This episode delves into the role of grace in mending and strengthening bonds. Consectetur adipiscing elit ut aliquam. Kara shares a moving story about a strained friendship and how grace helped heal it.
+Enim nulla aliquet porttitor lacus luctus accumsan. In this episode, Kara explores the concept of grace under pressure, drawing from personal anecdotes and listener questions. Vulputate mi sit amet mauris commodo quis. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor.
 
-Tortor consequat id porta nibh venenatis cras sed. Integer enim neque volutpat ac tincidunt. Listeners will hear practical advice on forgiveness and empathy, wrapped in Kara’s warm storytelling style. Pellentesque pulvinar pellentesque habitant morbi. Ut enim blandit volutpat maecenas.
+Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Placerat orci nulla pellentesque dignissim. She discusses practical ways to find peace when everything feels overwhelming, with a touch of humor to lighten the mood. Consequat mauris nunc congue nisi. Nec nam aliquam sem et tortor consequat.

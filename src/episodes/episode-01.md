@@ -1,16 +1,16 @@
 ---
-title: "Finding Grace in Chaos"
+title: "How I Began to Find God in Everything"
 host: "Kara Loryn Lilly"
-date: "2025-02-08"
-description: "Kara dives into how grace can shine through life’s messiest moments, offering insights and stories to inspire calm amidst the storm."
+date: "2025-02-01"
+description: "Join host Kara Loryn Lilly as she introduces the Everything is Grace Podcast, sharing her vision for exploring faith, life, and grace in everyday moments."
 image: ""
-imageAlt: "A stormy sky breaking into sunlight"
-duration: "00:32:15"
-episodeNumber: "02"
-audioFile: "/assets/audio/episode-2.mp3"
-tags: ["grace", "life", "resilience"]
+imageAlt: "Kara Loryn Lilly smiling in a serene setting"
+duration: "00:25:30"
+episodeNumber: "01"
+audioFile: "/assets/audio/episode-1.mp3"
+tags: ["intro", "faith", "podcast"]
 ---
 
-Enim nulla aliquet porttitor lacus luctus accumsan. In this episode, Kara explores the concept of grace under pressure, drawing from personal anecdotes and listener questions. Vulputate mi sit amet mauris commodo quis. Accumsan in nisl nisi scelerisque eu ultrices vitae auctor.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In this inaugural episode, Kara welcomes listeners into her world, explaining why she started this podcast and what listeners can expect from future episodes. Risus commodo viverra maecenas accumsan lacus vel.
 
-Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Placerat orci nulla pellentesque dignissim. She discusses practical ways to find peace when everything feels overwhelming, with a touch of humor to lighten the mood. Consequat mauris nunc congue nisi. Nec nam aliquam sem et tortor consequat.
+Donec ultrices tincidunt arcu non sodales. Mattis rhoncus urna neque viverra justo nec ultrices dui sapien. Kara shares a personal story that sparked her journey into podcasting, blending humor and heartfelt reflection. Pretium quam vulputate dignissim suspendisse in est. Lobortis mattis aliquam faucibus purus in massa tempor nec.

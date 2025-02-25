@@ -1,16 +1,16 @@
 ---
-title: "Everyday Grace For Catholics"
+title: "Grace in Relationships: Discovering God’s Hand in Vocation, Family, and Friendship"
 host: "Kara Loryn Lilly"
-date: "2025-02-22"
-description: "Kara uncovers the small, often unnoticed moments of grace in daily life, encouraging listeners to see beauty in the ordinary."
+date: "2025-02-15"
+description: "Kara reflects on how grace transforms relationships, from friendships to family ties, with stories and tips for fostering connection."
 image: ""
-imageAlt: "A cup of coffee on a cozy table"
-duration: "00:30:00"
-episodeNumber: "04"
-audioFile: "/assets/audio/episode-4.mp3"
-tags: ["daily-life", "grace", "mindfulness"]
+imageAlt: "Two hands clasped in friendship"
+duration: "00:28:45"
+episodeNumber: "03"
+audioFile: "/assets/audio/episode-3.mp3"
+tags: ["relationships", "grace", "connection"]
 ---
 
-Aliquam vestibulum morbi blandit cursus risus at. Malesuada fames ac turpis egestas sed tempus. In this episode, Kara invites listeners to slow down and notice grace in routine moments—like a sunrise or a kind word. Donec et odio pellentesque diam volutpat commodo sed egestas egestas.
+In iaculis nunc sed augue lacus. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. This episode delves into the role of grace in mending and strengthening bonds. Consectetur adipiscing elit ut aliquam. Kara shares a moving story about a strained friendship and how grace helped heal it.
 
-Tortor pretium viverra suspendisse potenti nullam ac tortor vitae purus. Enim diam vulputate ut pharetra sit amet aliquam. She weaves in listener-submitted stories, making this a community-driven exploration of everyday miracles. Est ante in nibh mauris cursus mattis.
+Tortor consequat id porta nibh venenatis cras sed. Integer enim neque volutpat ac tincidunt. Listeners will hear practical advice on forgiveness and empathy, wrapped in Kara’s warm storytelling style. Pellentesque pulvinar pellentesque habitant morbi. Ut enim blandit volutpat maecenas.
