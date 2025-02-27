@@ -17,7 +17,7 @@
   --fw-700: 700;
   --fw-900: 900;
   --clr-white: white;
-  --clr-black-200: #333333;
+  --clr-black-200: #3f3e3f;
 
   --clr-primary-300: #66806b;
   --clr-primary-400: #c1c9ad;
@@ -257,7 +257,9 @@ section,
   grid-template-columns: 0.25fr 0.5fr 0.25fr;
   justify-content: center;
   align-items: center;
-  padding: 2rem 5rem;
+  padding: 2rem;
+  font-family: var(--ff-sub-heading);
+  font-size: var(--fs-small);
 }
 
 .primary-header img {
@@ -266,8 +268,8 @@ section,
 }
 
 .primary-header svg {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .primary-header a:not([role="button"]) {
@@ -276,20 +278,26 @@ section,
 
 .primary-header div {
   display: flex;
-}
-
-.primary-header div:first-chid {
-  justify-content: start;
-}
-
-.primary-header div:nth-child(2) {
   justify-content: center;
+  align-items: center;
 }
 
-.primary-header div:last-child {
-  gap: 0.5rem;
-  align-items: center;
-  justify-content: end;
+    .primary-header div:first-chid {
+      justify-content: start;
+    }
+  
+    .primary-header div:nth-child(2) {
+      justify-content: center;
+    }
+  
+    .primary-header div:last-child {
+      gap: 0.75rem;
+      justify-content: end;
+    }
+
+.primary-header div p {
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.6;
 }
 
 .primary-header div:last-child [role="button"] {
@@ -305,23 +313,24 @@ section,
 /* Styling for buttons and elements with role="button" */
 button,
 [role="button"] {
-  /* Basic button styling */
-  background-color: var(--clr-primary-300);
-  color: var(--clr-white);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 2rem;
-  font-size: var(--fs-400);
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
+    color: var(--clr-secondary-300);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    outline: 1px solid var(--clr-secondary-300);
+    font-size: var(--fs-small);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    display: inline-block;
+    font-family: var(--ff-sub-heading);
 }
 
 /* Hover effect for interactive feedback */
 button:hover,
 [role="button"]:hover {
-  background-color: #4d604f;
+  background-color: var(--clr-secondary-500);
+  outline: none;
   /* A darker shade for hover */
 }
 
@@ -751,6 +760,7 @@ footer {
 .a11y-slider-prev {
   background: none;
   border: none;
+  outline: none;
   cursor: pointer;
   padding: 10px;
   position: absolute;
@@ -1155,5 +1165,10 @@ section, .section {
     .open-quote::before {
       top: 45px;
       left: 48%;
+    }
+}
+@media (min-width: 1200px) {
+  .primary-header div:last-child, .primary-header div:first-child {
+      justify-content: center;
     }
 }
