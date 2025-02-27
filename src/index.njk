@@ -145,58 +145,27 @@ layout: 'base.njk'
       <div class="form-group" method="POST" name="contact">
           <div>
             <label for="fullName">Full Name</label>
-            <input 
-              type="text" 
-              id="fullName" 
-              name="fullName" 
-              required 
-              minlength="2" 
-              pattern="[A-Za-z\s]+"
-              placeholder="FULL NAME">
+            <input type="text" id="fullName" name="fullName" required minlength="2" pattern="[A-Za-z\s]+" placeholder="FULL NAME">
           </div>
-
           <div>
             <label for="businessName">Business Name</label>
-            <input 
-              type="text" 
-              id="businessName" 
-              name="businessName" 
-              required 
-              minlength="2" 
-              pattern="[A-Za-z0-9\s]+"
-              placeholder="BUSINESS NAME">
+            <input type="text" id="businessName" name="businessName" required minlength="2" pattern="[A-Za-z0-9\s]+"placeholder="BUSINESS NAME">
           </div>
-
           <div>
             <label for="email">Email</label>
-            <input 
-              type="email" 
-              id="email" 
-              name="email" 
-              required 
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-              placeholder="EMAIL ADDRESS">
+            <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"placeholder="EMAIL ADDRESS">
           </div>
-
           <div>
             <label for="website">Website</label>
-            <input 
-              type="url" 
-              id="website" 
-              name="website" 
-              required
-              placeholder="WEBSITE">      
+            <input type="url" id="website" name="website" required placeholder="WEBSITE">      
           </div>
         </div>
         <div class="form-group">
         <div>
           <label for="topic">Topic of Discussion</label>
-          <textarea 
-            id="topic" 
-            name="topic" 
-            required 
-            placeholder="TOPIC OF DISCUSSION">
+          <textarea id="topic" name="topic" required placeholder="TOPIC OF DISCUSSION">
           </textarea>
+          <div class="cf-turnstile" data-sitekey="0x4AAAAAAA-x6qNFD5klJ4Tx"></div>
            <button class="btn--secondary" type="submit">SUBMIT</button>
         </div>
       </div>
