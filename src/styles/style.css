@@ -1,5 +1,6 @@
 :root {
   --fs-small: 0.75rem;
+  --fs-default: 1rem;
   --fs-300: 0.9375rem;
   --fs-400: 1.0625rem;
   --fs-500: 1.375rem;
@@ -9,7 +10,8 @@
 
   --ff-body: "Outfit-Regular", sans-serif;
   --ff-heading: "Vegawanty", serif;
-  --ff-sub-heading: "Brooklyn-Normal", serif;
+  --ff-sub-heading: "Brooklyn Normal", serif;
+  --letter-spacing: 0.125em;
 
   --fw-400: 400;
   --fw-700: 700;
@@ -76,7 +78,7 @@ ol:where([role="list"]) {
 
 /* Brooklyn-Normal Fonts */
 @font-face {
-  font-family: "Brooklyn-Nromal";
+  font-family: "Brooklyn Normal";
   font-style: normal;
   font-weight: 400;
   src: url('/assets/fonts/Brooklyn-Normal.woff') format("woff");
@@ -243,10 +245,12 @@ section,
   justify-content: center;
   list-style-type: none;
   border-bottom: 1px solid var(--clr-primary-400);
-  padding: 0.75rem 1.5rem;
+  padding: 1rem 1.5rem;
   color: var(--clr-primary-300);
-  letter-spacing: 5px;
+  letter-spacing: var(--letter-spacing);
   font-size: var(--fs-small);
+  font-family: var(--ff-sub-heading);
+  margin-block: 0;
 }
 
 .primary-header {
@@ -663,10 +667,19 @@ footer {
   border-top: 1px solid var(--clr-primary-300);
   border-bottom: 1px solid var(--clr-primary-300);
   padding: min(10vh, 4rem);
-  max-width: 100%;
   overflow-x: hidden;
   color: var(--clr-secondary-300);
   position: relative;
+}
+
+.testimonials-slider {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.testimonials p {
+  font-family: var(--ff-sub-heading);
+  text-transform: uppercase;
 }
 
 .open-quote {
@@ -734,6 +747,81 @@ footer {
   text-align: center;
 }
 
+/* Style the buttons to hide text and position arrows */
+.a11y-slider-next,
+.a11y-slider-prev {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 40px;
+  /* Standard width for arrows */
+  height: 40px;
+  /* Standard height for arrows */
+  text-indent: -9999px;
+  /* Visually hide the text */
+  overflow: hidden;
+  /* Ensure text doesn’t overflow */
+}
+
+/* Ensure buttons are focusable and visible for keyboard users */
+.a11y-slider-next:focus,
+.a11y-slider-prev:focus {
+  outline: 2px solid #66806b;
+  /* Visible focus outline */
+}
+
+/* Use background images for Next arrow */
+.a11y-slider-next {
+  right: 10px;
+  background-image: url('/assets/icons/arrow-right.svg');
+  /* Replace with your right arrow image */
+  background-size: contain;
+  /* Scales the image to fit while maintaining aspect ratio */
+  background-repeat: no-repeat;
+  /* Prevents tiling */
+  background-position: center;
+  /* Centers the arrow in the button */
+}
+
+/* Use background images for Previous arrow */
+.a11y-slider-prev {
+  left: 10px;
+  background-image: url('/assets/icons/arrow-left.svg');
+  /* Replace with your left arrow image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Optional: Add hover effect for interactivity */
+.a11y-slider-next:hover,
+.a11y-slider-prev:hover {
+  opacity: 0.8;
+  /* Slight fade for hover feedback */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+  .a11y-slider-next,
+  .a11y-slider-prev {
+    width: 30px;
+    /* Smaller on mobile */
+    height: 30px;
+    padding: 5px;
+  }
+}
+
+  /* Right arrow Unicode */
+  .a11y-slider-dots li button.active {
+    background: var(--clr-secondary-300);
+  }
+
 .a11y-slider-dots {
   display: flex;
   justify-content: center;
@@ -774,7 +862,6 @@ footer {
   max-width: 1200px;
   margin-inline: auto;
   background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 0.25rem;
   position: relative;
   z-index: 10;
 }
@@ -1013,7 +1100,6 @@ section, .section {
 
 .primary-navigation {
   gap: 4rem;
-  padding: 0.5rem 1.5rem;
 }
 
   .hero {
