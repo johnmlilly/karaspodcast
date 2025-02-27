@@ -1,7 +1,7 @@
 
 const slider = new A11YSlider(document.querySelector('.slider'), {
-    arrows: false,
-    dots: true,
+    arrows: true,
+    dots: false,
     autoplay: true,
-  slidesToShow: 1
+    slidesToShow: 1
 });
