@@ -7,8 +7,9 @@
   --fs-700: 2rem;
   --fs-xl: 3rem;
 
-  --ff-body: "Brooklyn-Normal", sans-serif;
+  --ff-body: "Outfit-Regular", sans-serif;
   --ff-heading: "Vegawanty", serif;
+  --ff-sub-heading: "Brooklyn-Normal", serif;
 
   --fw-400: 400;
   --fw-700: 700;
@@ -19,6 +20,7 @@
   --clr-primary-300: #66806b;
   --clr-primary-400: #c1c9ad;
 
+  --clr-secondary-200: #724027;
   --clr-secondary-300: #d1947d;
   --clr-secondary-400: #f8dbd5;
   --clr-secondary-500: #ffeeea;
@@ -78,6 +80,15 @@ ol:where([role="list"]) {
   font-style: normal;
   font-weight: 400;
   src: url('/assets/fonts/Brooklyn-Normal.woff') format("woff");
+  font-display: swap;
+}
+
+/* Brooklyn-Normal Fonts */
+@font-face {
+  font-family: "Outfit-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Outfit-Regular.woff') format("woff");
   font-display: swap;
 }
 
@@ -142,7 +153,8 @@ h1,
 h2,
 h3 {
   font-family: var(--ff-heading);
-  font-weight: var(--fw-900);
+  font-weight: var(--fw-400);
+  letter-spacing: 2px;
   line-height: 1.1;
 }
 
@@ -399,7 +411,7 @@ footer {
 
 .hero-content h1 {
   font-size: var(--fs-700);
-  color: var(--clr-white);
+  color: var(--clr-secondary-200);
   letter-spacing: 2px;
 }
 
@@ -427,10 +439,10 @@ footer {
 }
 
 .episode-feature h2 {
-  font-size: var(--fs-500);
-  letter-spacing: 5px;
+  font-size: var(--fs-600);
   color: var(--clr-primary-300);
   text-transform: uppercase;
+  font-family: var(--ff-sub-heading);
 }
 
 .episode-feature h3 {
@@ -472,7 +484,7 @@ footer {
 }
 
 .podcast-description h2 {
-  font-size: var(--fs-700);
+  font-size: var(--fs-xl);
   color: var(--clr-primary-300);
   line-height: 1.6;
   padding-block: 0 1.5rem;
@@ -495,6 +507,7 @@ footer {
   font-weight: var(--fw-400);
   color: var(--clr-secondary-400);
   text-transform: uppercase;
+  font-family: var(--ff-body);
 }
 
 .podcast-icons svg {
@@ -550,7 +563,8 @@ footer {
 .episode-list span {
   grid-area: number;
   color: var(--clr-secondary-300);
-  font-size: var(--fs-xl);
+  font-size: 6rem;
+  font-family: var(--ff-heading);
 }
 
 .episode-list a {
@@ -598,14 +612,14 @@ footer {
 }
 
 .host-profile span {
-  font-size: var(--fs-small);
+  font-size: 1rem;
   letter-spacing: 3px;
   color: var(--clr-secondary-400);
 }
 
 .host-profile h2 {
   font-size: var(--fs-xl);
-  padding-block: 1.5rem;
+  padding-block: 0.5rem 1.5rem;
   color: var(--clr-secondary-400);
 }
 
@@ -1029,7 +1043,8 @@ section, .section {
   .episode-list {
     grid-template-areas: "number title play";
     grid-template-columns: 0.25fr 1fr auto;
-    gap: 1.5rem;
+    gap: 2rem;
+    align-items: center;
   }
 
   .featured-episode {
