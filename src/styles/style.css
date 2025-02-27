@@ -156,7 +156,6 @@ h2,
 h3 {
   font-family: var(--ff-heading);
   font-weight: var(--fw-400);
-  letter-spacing: 2px;
   line-height: 1.1;
 }
 
@@ -771,7 +770,7 @@ footer {
 /* Ensure buttons are focusable and visible for keyboard users */
 .a11y-slider-next:focus,
 .a11y-slider-prev:focus {
-  outline: 2px solid #66806b;
+  outline: none;
   /* Visible focus outline */
 }
 
@@ -801,7 +800,8 @@ footer {
 /* Optional: Add hover effect for interactivity */
 .a11y-slider-next:hover,
 .a11y-slider-prev:hover {
-  opacity: 0.8;
+  opacity: 0.5;
+  background-color: transparent;
   /* Slight fade for hover feedback */
 }
 
