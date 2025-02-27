@@ -7,8 +7,8 @@
   --fs-700: 2rem;
   --fs-xl: 3rem;
 
-  --ff-body: "Arial", sans-serif;
-  --ff-heading: "Garamond", serif;
+  --ff-body: "Brooklyn-Normal", sans-serif;
+  --ff-heading: "Vegawanty", serif;
 
   --fw-400: 400;
   --fw-700: 700;
@@ -61,6 +61,24 @@ ol:where([role="list"]) {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+/* Vegawanty Font */
+@font-face {
+  font-family: "Vegawanty";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Vegawanty.woff') format("woff");
+  font-display: swap;
+}
+
+/* Brooklyn-Normal Fonts */
+@font-face {
+  font-family: "Brooklyn-Nromal";
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/Brooklyn-Normal.woff') format("woff");
+  font-display: swap;
 }
 
 /* Set core root defaults */
