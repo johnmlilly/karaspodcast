@@ -41,5 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
     toggleButton.setAttribute('aria-expanded', !expanded);
     nav.setAttribute('aria-expanded', !expanded);
+    // Apply or remove inline style for fixed positioning
+    if (!expanded) {
+      toggleButton.style.position = 'fixed';
+    
+    } else {
+      toggleButton.style.position = ''; // Reset to default (inherits from CSS)
+    }
   });
 });
