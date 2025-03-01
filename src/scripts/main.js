@@ -31,3 +31,15 @@ window.addEventListener('DOMContentLoaded', (event) => {
       console.info("Image visible");
   }
 });
+
+// Mobile Navigation Functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.primary-navigation__toggle');
+  const nav = document.querySelector('.primary-navigation');
+
+  toggleButton.addEventListener('click', () => {
+    const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
+    toggleButton.setAttribute('aria-expanded', !expanded);
+    nav.setAttribute('aria-expanded', !expanded);
+  });
+});
