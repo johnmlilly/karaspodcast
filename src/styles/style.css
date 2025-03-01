@@ -17,7 +17,7 @@
   --fw-700: 700;
   --fw-900: 900;
   --clr-white: white;
-  --clr-black-200: #3f3e3f;
+  --clr-black-200: #403E40;
 
   --clr-primary-forest: #66806b;
   --clr-primary-blush: #D4987C;
@@ -482,7 +482,7 @@ button,
 /* Hover effect for interactive feedback */
 button:hover,
 [role="button"]:hover {
-  background-color: var(--clr-accent-sand);
+  background-color: var(--clr-secondary-lace);
   outline: none;
   /* A darker shade for hover */
 }
@@ -498,7 +498,7 @@ button.btn--secondary,
 button.btn--secondary:hover,
 [role="button"].btn--secondary:hover {
   background-color: var(--clr-primary-blush);
-  /* Darker shade for hover, if desired */
+  color: var(--clr-white);
 }
 
 /* Focus styling for accessibility */
