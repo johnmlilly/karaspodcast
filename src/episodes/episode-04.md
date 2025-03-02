@@ -3,7 +3,7 @@ title: "Grace in the World: Finding God's Hand in the Culture and Current Events
 host: "Kara Loryn Lilly"
 date: "2025-02-22"
 description: "Kara uncovers the small, often unnoticed moments of grace in daily life, encouraging listeners to see beauty in the ordinary."
-image: ""
+image: "/assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg"
 imageAlt: "A cup of coffee on a cozy table"
 duration: "00:30:00"
 episodeNumber: "04"
