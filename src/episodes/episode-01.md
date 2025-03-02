@@ -8,7 +8,7 @@ imageAlt: "Kara Loryn Lilly smiling in a serene setting"
 duration: "00:25:30"
 episodeNumber: "01"
 audioFile: "/assets/audio/episode-1.mp3"
-tags: ["intro", "faith", "podcast"]
+tags: ["faith", "podcast"]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. In this inaugural episode, Kara welcomes listeners into her world, explaining why she started this podcast and what listeners can expect from future episodes. Risus commodo viverra maecenas accumsan lacus vel.
