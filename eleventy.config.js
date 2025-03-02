@@ -5,7 +5,7 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 export default async function(eleventyConfig) {
     
   eleventyConfig.addPassthroughCopy('./src/styles');
-  eleventyConfig.addPassthroughCopy('font.woff');
+  eleventyConfig.addPassthroughCopy('./src/fonts/font.woff');
   eleventyConfig.addPassthroughCopy('./src/assets');
   eleventyConfig.addPassthroughCopy('./src/scripts');
   eleventyConfig.addPassthroughCopy('./src/admin');
