@@ -6,10 +6,10 @@ description: "In this inaugural episode of the podcast 'Everything is Grace', Ka
 image: "/assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg"
 imageAlt: "Kara Loryn Lilly smiling in a serene setting"
 duration: "00:11:20"
-episodeNumber: "intro"
-audioFile: "/assets/audio/episode-1.mp3"
-tags: ["intro", "faith", "podcast"]
-spotify: "https://open.spotify.com/episode/3hm5DAEFLgdcxY03k9BjuN"
+episodeNumber: "Intro"
+audioFile: "/assets/episodes/karas-studio-EuqMV-composer-2025-2-27__3-13-16.mp4"
+tags: ["intro", "faith",]
+spotify: "https://open.spotify.com/episode/3hm5DAEFLgdcxY03k9BjuN?si=SjdPZqnCQrOH2aDHoVngNg"
 youtube: "https://youtu.be/J8gaYhVil28"
 apple: "https://podcasts.apple.com/us/podcast/intro-episode-welcome-to-the-everything-is-grace-podcast/id1798885593?i=1000696459583"
 ---
