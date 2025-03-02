@@ -24,6 +24,7 @@ layout: 'base.njk'
             <h3>{{ episode.data.host }}</h3>
         </div>
             <p> {{ episode.data.description }} </p>
+            <p><a href="{{ episode.url }}">Listen Now &rarr; </a></p>
          {%- endfor -%}
         <audio controls>
           <source src="assets/episodes/karas-studio-EuqMV-composer-2025-2-27__3-13-16.mp4" type="audio/mpeg">
