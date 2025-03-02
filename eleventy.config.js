@@ -43,10 +43,16 @@ export default async function(eleventyConfig) {
     // Get current year for footer
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-    // Format blog date into readable format
-    eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
-    });
+   // Format blog date into readable format
+  eleventyConfig.addFilter("postDate", (date) => {
+    // Handle both Date objects and ISO strings (e.g., "2025-02-26")
+    if (date instanceof Date) {
+      return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_MED);
+    } else if (typeof date === "string") {
+      return DateTime.fromISO(date).toLocaleString(DateTime.DATE_MED);
+    }
+    return "Invalid Date"; // Fallback for invalid input
+  });
   
   // Filter to exclude episodes with the "intro" tag
   eleventyConfig.addFilter('excludeIntroByTag', (collection, introTag = "intro") => {
