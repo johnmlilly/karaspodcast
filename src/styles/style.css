@@ -283,7 +283,7 @@ section,
 }
 
 .primary-navigation__toggle:focus {
-  outline: 1px solid var(--clr-primary-forest);
+  outline: none;
 }
 
 /* Hamburger icon */
