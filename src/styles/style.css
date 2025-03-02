@@ -261,6 +261,11 @@ section,
   /* Smooth transition for overlay */
 }
 
+.primary-navigation li a {
+  text-decoration: none;
+  color: var(--clr-primary-forest);
+}
+
 .primary-navigation-mobile, .primary-navigation li:last-child {
   display: none;
 }
