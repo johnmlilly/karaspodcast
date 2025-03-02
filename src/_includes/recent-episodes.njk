@@ -1,4 +1,4 @@
-{%- for episode in collections.episode | reverse -%}
+{%- for episode in collections.episode | excludeIntroByTag | reverse -%}
     <div class="recent-episodes--cards">
       <img src="https://fakeimg.pl/500x500" alt="{{ episode.data.title }}" />
         <span>EPISODE {{ episode.data.episodeNumber }}</span>

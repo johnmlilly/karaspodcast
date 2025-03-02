@@ -47,6 +47,16 @@ export default async function(eleventyConfig) {
     eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
+  
+  // Filter to exclude episodes with the "intro" tag
+  eleventyConfig.addFilter('excludeIntroByTag', (collection, introTag = "intro") => {
+    return collection.filter(episode => !episode.data.tags || !episode.data.tags.includes(introTag));
+  });
+
+  // Filter to show only episodes with the "intro" tag
+  eleventyConfig.addFilter('onlyIntroByTag', (collection, introTag = "intro") => {
+    return collection.filter(episode => episode.data.tags && episode.data.tags.includes(introTag));
+  });
 
     // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Adds the {% css %} paired shortcode

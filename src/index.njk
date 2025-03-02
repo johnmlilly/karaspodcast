@@ -19,13 +19,14 @@ layout: 'base.njk'
     <img src="/assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg" alt="Intro Episode Image">
       <div class="episode-feature__text">
         <div class="episode-feature__heading">
-          <h2>Intro Episode: Welcome to the Everything is Grace Podcast!</h2>
-          <h3>Kara Loryn Lilly</h3>
+          {%- for episode in collections.episode | onlyIntroByTag -%}  
+            <h2>{{ episode.data.title }}</h2>
+            <h3>{{ episode.data.host }}</h3>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia curae; Nullam quis lacus non dolor tincidunt tincidunt. Nullam ac blandit massa.</p>
+            <p> {{ episode.data.description }} </p>
+         {%- endfor -%}
         <audio controls>
-          <source src="path/to/your/placeholder-audio.mp3" type="audio/mpeg">
+          <source src="assets/episodes/karas-studio-EuqMV-composer-2025-2-27__3-13-16.mp4" type="audio/mpeg">
             Your browser does not support the audio element.
           </audio>
         </div>
@@ -46,7 +47,7 @@ layout: 'base.njk'
   <div class="featured-episode">
     <div class="margin-block-3">
       <h2>Listen to the foundational episode series first!</h2>
-      {%- for episode in collections.episode -%}
+      {%- for episode in collections.episode | excludeIntroByTag -%}
         <div class="episode-list {% if loop.last %} episode-list--last{% endif %}">
           <span>{{ episode.data.episodeNumber }}</span>
           <h3>{{ episode.data.title }}</h3>
@@ -78,16 +79,14 @@ layout: 'base.njk'
       {%- endfor -%}
     </div>
     <div class="featured-episode__media">
-      <img
-        src="/assets/episodes/podcast-iphone-frame.png"
-        alt="Phone displaying podcast player"
-        class="featured-episode__phone"></div>
+      <img src="/assets/episodes/podcast-iphone-frame.png" alt="Phone displaying podcast player" class="featured-episode__phone">
+    </div>
   </div>
 </section>
 <section class="host-profile--background bg-lazy-image ">
   <div class="host-profile">
     <div>
-      <img src="/assets/headshots/meet-kara-loryn-wedding-photographer-4.jpg" alt="Kara Lilly" />
+      <img src="/assets/headshots/Everything-is-Grace-Podcast-Kara-Loryn-Lilly-0018.jpg" alt="Kara Lilly" />
     </div>
     <div>
       <span>MEET YOUR HOST</span>
