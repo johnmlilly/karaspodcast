@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="/styles/style.css">
         <script src="/scripts/main.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
-        <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
         <link rel="icon" type="image/x-icon" href="/assets/logo/klp_favicon.png">
         <title>{{ title | default("Everything is Grace Podcast") }}</title>
         <style>{% getBundle "css" %}</style>
@@ -25,6 +24,7 @@
                 &copy; {% year %} KARA LORYN LILLY
             </p>
         </footer>
-        <script type="module" src="/scripts/slider.js"></script>
+        <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
+        <script type="module" src="/scripts/slider.js" defer></script>
     </body>
 </html>
