@@ -1,5 +1,5 @@
 ---
-title: Coming Soon!
+title: "Grace Begins in You: How Your Thoughts Shape Your Faith & Life"
 host: Kara Loryn Lilly
 date: 2025-02-08
 description: Check back soon!
