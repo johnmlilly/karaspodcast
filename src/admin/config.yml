@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   branch: main 
-media_folder: "public/assets/episodes"
+media_folder: "assets/episodes"
 public_folder: "assets/episodes"
 publish_mode: editorial_workflow
 drafts_enabled: true
@@ -17,7 +17,7 @@ collections:
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Host", name: "host", widget: "string", required: true }
       - { label: "Date", name: "date", widget: "datetime", required: true, format: "YYYY-MM-DD" }
-      - { label: "Short Description", name: "description", widget: "markdown", required: true, hint: "This is used for meta description and intro text on home page." }
+      - { label: "Intro Text", name: "description", widget: "text", required: true, maxlength: "160", hint: "This is used for meta descriptions and intro text on recent episode cards." }
       - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Cover Art", name: "image", widget: "image", choose_url: false, media_library: { max_file_size: 5242880 } } # 5MB max for images
       - { label: "Duration", name: "duration", widget: "string", required: true, hint: "Format: HH:MM:SS or MM:SS (e.g., 00:11:20)" }
