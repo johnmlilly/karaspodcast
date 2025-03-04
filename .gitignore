@@ -2,8 +2,9 @@
 node_modules
 
 # build artefacts
-public
+public/
 css
+.cache
 
 # secrets and errors
 .env
