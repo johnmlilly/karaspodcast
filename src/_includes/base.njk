@@ -6,9 +6,17 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="/styles/style.css">
         <script src="/scripts/main.js"></script>
-        <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+        <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" rel="dns-prefetch" />
         <link rel="icon" type="image/x-icon" href="/assets/logo/klp_favicon.png">
-        <title>{{ title | default("Everything is Grace Podcast") }}</title>
+        <title>{{ title | default("Everything is Grace Podcast") }} | Everything is Grace Podcast</title>
+        {% metagen 
+            title=title,
+            desc=description,
+            url='https://karalorynlilly.com' + page.url,
+            img=image,
+            img_alt='Cover art for ' + title,
+            generator='eleventy'
+        %}
         <style>{% getBundle "css" %}</style>
         {% css %}
         .bg-lazy-image {background-image: none !important}
