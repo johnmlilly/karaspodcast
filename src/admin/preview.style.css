@@ -1,0 +1,139 @@
+:root {
+    --fs-small: 0.75rem;
+    --fs-default: 1rem;
+    --fs-300: 0.9375rem;
+    --fs-400: 1.0625rem;
+    --fs-500: 1.375rem;
+    --fs-600: 1.875rem;
+    --fs-700: 2rem;
+    --fs-xl: 3rem;
+
+    --ff-body: "Outfit-Regular", sans-serif;
+    --ff-heading: "Vegawanty", serif;
+    --ff-sub-heading: "Brooklyn Normal", serif;
+    --letter-spacing: 0.125em;
+
+    --fw-400: 400;
+    --fw-700: 700;
+    --fw-900: 900;
+    --clr-white: white;
+    --clr-black-200: #403E40;
+
+    --clr-primary-forest: #66806b;
+    --clr-primary-blush: #D4987C;
+
+    --clr-secondary-olive: #C4CCB0;
+    --clr-secondary-lace: #FBDED8;
+    --clr-secondary-200: #724027;
+
+    --clr-accent-sand: #F4F1EE;
+
+    --clr-neutral-100: hsla(0, 0%, 100%, 1);
+    --clr-neutral-300: hsla(0, 0%, 50%, 1);
+    --clr-neutral-400: hsla(0, 0%, 40%, 1);
+    --clr-neutral-500: hsla(0, 0%, 60%, 1);
+    --clr-neutral-900: hsla(0, 0%, 10%, 1);
+}
+
+/* //////////////////////
+  RESET - source: https://piccalil.li/blog/a-modern-css-reset
+  /////////////////////// */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul:where([role="list"]),
+ol:where([role="list"]) {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Vegawanty Font */
+@font-face {
+    font-family: "Vegawanty";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Vegawanty.woff') format("woff");
+    font-display: swap;
+}
+
+/* Brooklyn-Normal Fonts */
+@font-face {
+    font-family: "Brooklyn Normal";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Brooklyn-Normal.woff') format("woff");
+    font-display: swap;
+}
+
+/* Brooklyn-Normal Fonts */
+@font-face {
+    font-family: "Outfit-Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url('/assets/fonts/Outfit-Regular.woff') format("woff");
+    font-display: swap;
+}
+
+/* Custom preview styles for Decap CMS */
+body {
+    font-family: var(--ff-body), sans-serif;
+    background-color: #f5f7fa;
+    /* Light gray background */
+    color: var(--clr-black-200);
+    /* Dark text color */
+    line-height: 1.6;
+    padding: 0.5rem 2.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ff-heading), sans-serif;
+    /* Star Wars style for headings */
+    color: #333;
+}
+
+p {
+    color: #333;
+}
+
+
+a {
+    color: var(--clr-primary-blush);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-block: 1rem;
+    border-radius: 0.25rem;
+}

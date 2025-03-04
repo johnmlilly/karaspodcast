@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: main 
+media_folder: "public/assets/episodes"
+public_folder: "assets/episodes"
+publish_mode: editorial_workflow
+drafts_enabled: true
+site_url: https://karalorynlilly.com/
+display_url: https://karalorynlilly.com/
+collections:
+  - name: "episode" # Collection name, matching your Eleventy collection tag
+    label: "Episodes" # Display name in CMS
+    folder: "src/episodes" # Directory for episode files (create this if it doesn’t exist)
+    create: true # Allow creating new episodes
+    slug: "{{slug}}" # Generate URL-friendly slugs from titles
+    fields: # Fields matching your front matter
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Host", name: "host", widget: "string", required: true }
+      - { label: "Date", name: "date", widget: "datetime", required: true, format: "YYYY-MM-DD" }
+      - { label: "Description", name: "description", widget: "markdown", required: true }
+      - { label: "Cover Art", name: "image", widget: "image", choose_url: false, media_library: { max_file_size: 5242880 } } # 5MB max for images
+      - { label: "Duration", name: "duration", widget: "string", required: true, hint: "Format: HH:MM:SS or MM:SS (e.g., 00:11:20)" }
+      - { label: "Episode Number", name: "episodeNumber", widget: "string", required: true, hint: "e.g., 'Intro' or a number like '01'" }
+      - { label: "Audio File", name: "audioFile", widget: "file", required: false } 
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        default: ["episode"]
+        allow_add: true
+        field:
+          label: "Tag"
+          name: "tag"
+          widget: "select"
+          options:
+            - episode
+            - intro
+            - faith
+      - { label: "Spotify URL", name: "spotify", widget: "string" }
+      - { label: "YouTube URL", name: "youtube", widget: "string" }
+      - { label: "Apple Podcasts URL", name: "apple", widget: "string" }
