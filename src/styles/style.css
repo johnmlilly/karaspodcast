@@ -962,6 +962,13 @@ footer {
   /* Ensure text doesn’t overflow */
 }
 
+@media (max-width: 768px) {
+.a11y-slider-next,
+  .a11y-slider-prev {
+    inset: auto auto -4rem auto;
+  }
+}
+
 /* Ensure buttons are focusable and visible for keyboard users */
 .a11y-slider-next:focus,
 .a11y-slider-prev:focus {
