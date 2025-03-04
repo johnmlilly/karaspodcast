@@ -1,24 +1,42 @@
-# JAMStack personal blog - starter files
+# Kara's Podcast
 
-These are the starting files used by [Kevin Powell](https://kevinpowell.co) to create a personal blog site for the [Codementor](https://www.codementor.io/) DevProjects Challenge, [Create a fast and secure blog using JAMStack](https://www.codementor.io/projects/web/create-a-fast-and-secure-blog-using-jamstack-c93coupnxb). You are free to use them however you want to get started with the challenge, if you'd like to start working on creating the site without worrying about the content itself.
+Kara's Podcast is a modern, mobile-friendly platform designed for hosting and managing podcast episodes. Built with [Eleventy](https://www.11ty.dev/), it uses [Decap CMS](https://decapcms.org/) for seamless content management and delivers a clean, user-focused experience. The template for this repository is taken from Kevin Powell's [JAMStack Blog Starter](https://github.com/kevin-powell/JAMStack-blog-starter).
 
-The provided files are finished pages using regular HTML and CSS. The HTML files can be broken down into peices, and used to build out the different templates and partial files using a templating language of your choice.
+## Purpose
+The platform aims to provide an accessible and engaging way for listeners to enjoy podcasts, especially on mobile devices, while offering content creators a simple system to upload and manage episodes.
 
-The styling of the pages is already complete. That said, the `design-files` folder contains both a Figma file, and .jpg of a design if you want to try to build it from scratch. You do not need to use this design at all either, it depends on how you wish to approach the challenge.
+## Features
+- Mobile-friendly design optimized for smartphones and tablets
+- Trending episodes section to showcase popular content
+- Easy-to-use audio playback with controls and progress tracking
+- Content management through Decap CMS
+- Support for custom episode artwork and metadata
 
-The `src` folder contains files so that you can get your project up and running without worrying about content for posts/articles. That folder contains:
+## Technology Stack
+- **[Eleventy](https://www.11ty.dev/)**: Static site generator for fast, lightweight builds
+- **[Decap CMS](https://decapcms.org/)**: Open-source CMS for managing podcast content
+- **[Netlify](https://www.netlify.com/)**: Hosting and deployment platform with CDN, Image CDN, and Auth0 integration
+- **HTML, CSS, JavaScript**: Core frontend technologies
 
-- HTML files to use as a base for the different page layouts. These can be turned into the templates that will be used.
-- CSS file for styling the pages
-- 5 blog articles in the `blog` folder
-- images and a logo in the `assets` folder
+## Getting Started
+To run the project locally:
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/johnmlilly/karaspodcast.git
+   cd karaspodcast
+   ```
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+4. Visit `http://localhost:8080` in your browser (or the port specified in the config).
 
-The articles are written in Markdown, and include Front Matter. Depending on the Static Site Generator you use, it is possible that you will have to modify these a little if you wish to use them. 
+## Usage
+Manage podcast episodes via the Decap CMS interface. Add new episodes, upload audio files, and edit metadata directly from the CMS. The site is hosted on Netlify, leveraging its CDN for fast performance, Image CDN for optimized images, and Auth0 for user management.
 
-## DevProjects Challenge
-
-As mentioned, these files are here to help get started with a DevProjects challenge. Please visit the [challenge page](#) to learn more about the challenge.
-
-## Tutorial
-
-You can [watch this video](https://youtu.be/4wD00RT6d-g) to see how Kevin uses Eleventy, Netlify, and Netlify CMS to create a full-featured blog site built entirely with static files.
+## License
+This project is licensed under the MIT License. See the `LICENSE` file for details.
