@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main 
 media_folder: "assets/episodes"
-public_folder: "assets/episodes"
+public_folder: "/src/assets/episodes"
 publish_mode: editorial_workflow
 drafts_enabled: true
 site_url: https://karalorynlilly.com/
