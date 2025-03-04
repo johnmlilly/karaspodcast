@@ -18,7 +18,7 @@ collections:
       - { label: "Host", name: "host", widget: "string", required: true }
       - { label: "Date", name: "date", widget: "datetime", required: true, format: "YYYY-MM-DD" }
       - { label: "Short Description", name: "description", widget: "markdown", required: true, hint: "This is used for meta description and intro text on home page." }
-       - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Cover Art", name: "image", widget: "image", choose_url: false, media_library: { max_file_size: 5242880 } } # 5MB max for images
       - { label: "Duration", name: "duration", widget: "string", required: true, hint: "Format: HH:MM:SS or MM:SS (e.g., 00:11:20)" }
       - { label: "Episode Number", name: "episodeNumber", widget: "string", required: true, hint: "e.g., 'Intro' or a number like '01'" }
