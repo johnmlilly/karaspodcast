@@ -39,3 +39,4 @@ collections:
       - { label: "Spotify URL", name: "spotify", widget: "string" }
       - { label: "YouTube URL", name: "youtube", widget: "string" }
       - { label: "Apple Podcasts URL", name: "apple", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
