@@ -549,27 +549,6 @@ button:disabled,
   cursor: not-allowed;
 }
 
-.page-header__content {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-list {
-  margin: 0;
-  padding: 0;
-}
-
-.nav-list a {
-  color: var(--clr-neutral-900);
-  text-decoration: none;
-}
-
-.nav-list a:focus,
-.nav-list a:hover {
-  color: var(--clr-secondary-olive);
-  text-decoration: underline;
-}
-
 /* //////////////////////
   Footer
   /////////////////////// */
@@ -726,12 +705,12 @@ footer {
 .featured-episode__media {
   display: flex;
   justify-content: center;
-  transform: translate(97.3783px, -100px) rotate(15deg);
+  transform: translate(97.3783px, -100px) rotate(5deg);
 }
 
 .featured-episode__phone {
   display: none;
-  max-width: 400px;
+  max-width: 500px;
 }
 
 .episode-list {
@@ -853,7 +832,7 @@ footer {
   color: var(--clr-primary-blush);
 }
 
-.recent-episodes--cards h3 a:hover, .recent-episodes--cards h3 a:focus {
+.recent-episodes--cards h3 a:is(:hover, :focus) {
   text-decoration: underline;
 }
 
@@ -982,8 +961,7 @@ footer {
 }
 
 /* Ensure buttons are focusable and visible for keyboard users */
-.a11y-slider-next:focus,
-.a11y-slider-prev:focus {
+:is(.a11y-slider-next, .a11y-slider-prev):focus {
   outline: none;
   /* Visible focus outline */
 }
@@ -1012,8 +990,7 @@ footer {
 }
 
 /* Optional: Add hover effect for interactivity */
-.a11y-slider-next:hover,
-.a11y-slider-prev:hover {
+:is(.a11y-slider-next, .a11y-slider-prev):hover {
   opacity: 0.5;
   background-color: transparent;
   /* Slight fade for hover feedback */
@@ -1179,8 +1156,6 @@ textarea {
   margin-bottom: 1rem;
   resize: none;
 }
-
-input :placeholder-shown
 
 textarea {
   height: 100px;
