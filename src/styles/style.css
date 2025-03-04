@@ -1186,14 +1186,14 @@ textarea {
   /////////////////////// */
 
 .episode-header {
-  display: flex;
+  display: grid;
   gap: 2rem;
   flex-wrap: wrap;
   padding-block: 1.5rem 3rem;
 }
 
 .episode-header__media {
-  width: 200px;
+  width: 250px;
   flex: 1;
 }
 
@@ -1316,6 +1316,10 @@ section, .section {
       top: 45px;
       left: 48%;
     }
+
+        .episode-header {
+          grid-template-columns: 0.25fr 0.75fr;
+        }
 }
 @media (min-width: 1200px) {
   .primary-header div:last-child, .primary-header div:first-child {
