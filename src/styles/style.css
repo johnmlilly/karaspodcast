@@ -742,6 +742,7 @@ footer {
   padding: 3rem 0;
   border-top: 1px solid var(--clr-primary-blush);
   border-bottom: px solid var(--clr-primary-blush);
+  justify-content: space-between;
 }
 
 .episode-list--last {
@@ -1262,6 +1263,7 @@ section, .section {
 .primary-header {
   padding: 2rem 5rem;
 }
+
 .primary-header div p {
   text-align: left;
 }
