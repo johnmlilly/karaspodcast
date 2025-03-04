@@ -390,6 +390,7 @@ section,
 .primary-header div p {
   letter-spacing: var(--letter-spacing);
   line-height: 1.6;
+  text-align: center;
 }
 
 .primary-header div:last-child [role="button"] {
@@ -424,13 +425,17 @@ section,
   height: 24px;
   fill: var(--clr-primary-forest);
 }
-  
+
 .primary-navigation-mobile {
   display: flex;
   align-items: center;
-  margin: 0.5rem 1rem;
+  margin: 0.75rem 1rem;
   justify-content: space-between;
   flex-direction: row-reverse;
+}
+
+.primary-navigation-mobile img {
+  width: 40px;
 }
   
   .primary-navigation {
@@ -1256,6 +1261,9 @@ section, .section {
 
 .primary-header {
   padding: 2rem 5rem;
+}
+.primary-header div p {
+  text-align: left;
 }
 
   .hero {
