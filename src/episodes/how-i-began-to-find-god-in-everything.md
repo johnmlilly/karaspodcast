@@ -8,7 +8,7 @@ description: Join host Kara Loryn Lilly as she introduces the Everything is
 image: /assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg
 duration: 00:25:12
 episodeNumber: 1
-audioFile: /assets/audio/episode-1.mp3
+audioFile: ""
 spotify: https://open.spotify.com/episode/2uSaYgF4cpar4PTYi9Mc3B?si=zWEJQ3G7RhyENlD-sP2ULg
 youtube: www.youtube.com
 apple: www.apple.com
