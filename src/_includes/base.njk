@@ -27,11 +27,7 @@
         <main>
             {{ content | safe }}
         </main>
-        <footer>
-            <p>
-                &copy; {% year %} KARA LORYN LILLY
-            </p>
-        </footer>
+        {% include "basefooter.njk" %}
         <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
         <script type="module" src="/scripts/slider.js" defer></script>
     </body>

@@ -173,6 +173,10 @@ section,
   padding: 1.5rem;
 }
 
+.footer-container {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
 
 /* //////////////////////
   Utility Classes
@@ -553,12 +557,46 @@ button:disabled,
   Footer
   /////////////////////// */
 
-footer {
+.footer__year {
   padding: 1.5rem 0;
   background-color: var(--clr-secondary-olive);
   color: var(--clr-primary-forest);
   text-align: center;
   font-size: var(--fs-small);
+}
+
+.footer__cta {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  margin-block: 1.5rem 3rem;
+  color: var(--clr-primary-blush);
+  justify-items: center;
+  align-items: center;
+}
+
+.footer__cta div:is(:first-child, :last-child) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer__cta h2 {
+  font-size: var(--fs-600);
+}
+
+.footer__cta div:last-child a {
+  text-decoration: none;
+}
+.footer__cta img {
+  width: 300px;
+}
+
+.footer__cta p {
+  font-size: var(--fs-small);
+  color: var(--clr-primary-forest);
+  font-family: var(--ff-sub-heading);
 }
 
 /* //////////////////////
@@ -1232,6 +1270,20 @@ section, .section {
   padding: min(10vh, 4rem) 1.5rem;
 }
 
+.footer-container {
+  padding: min(10vh, 4rem) 1.5rem 0 1.5rem;
+}
+
+.footer__cta div:first-child {
+  border-right: 1px solid var(--clr-primary-blush);
+  padding-right: 6rem;
+}
+
+.footer__cta div:last-child {
+  border-left: 1px solid var(--clr-primary-blush);
+  padding-left: 6rem;
+}
+
 .primary-navigation {
   gap: 4rem;
 }
@@ -1306,6 +1358,7 @@ section, .section {
         .episode-header {
           grid-template-columns: 0.25fr 0.75fr;
         }
+
 }
 @media (min-width: 1200px) {
   .primary-header div:last-child, .primary-header div:first-child {
