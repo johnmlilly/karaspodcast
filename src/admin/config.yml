@@ -13,6 +13,7 @@ collections:
     folder: "src/episodes" # Directory for episode files (create this if it doesn’t exist)
     create: true # Allow creating new episodes
     slug: "{{slug}}" # Generate URL-friendly slugs from titles
+    preview_path: episodes/{{slug}} # Preview URL of the episode
     fields: # Fields matching your front matter
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Host", name: "host", widget: "string", required: true }
