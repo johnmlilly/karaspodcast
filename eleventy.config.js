@@ -64,6 +64,11 @@ export default async function(eleventyConfig) {
     return collection.filter(episode => episode.data.tags && episode.data.tags.includes(introTag));
   });
 
+  // Filter to pad numbers with leading zeros (e.g., 1 → 01, 10 → 10)
+  eleventyConfig.addFilter("padEpisodeNumber", (number) => {
+    return number < 10 ? `0${Math.floor(number)}` : Math.floor(number).toString();
+  });
+
     // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
 	// Adds the {% css %} paired shortcode
 	eleventyConfig.addBundle("css", {

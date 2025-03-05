@@ -1,7 +1,7 @@
 {%- for episode in collections.episode | excludeIntroByTag | reverse -%}
     <div class="recent-episodes--cards">
       <img src="{{ episode.data.image }}" alt="{{ episode.data.title }}" />
-        <span>EPISODE {{ episode.data.episodeNumber }}</span>
+        <span>EPISODE {{ episode.data.episodeNumber | padEpisodeNumber }}</span>
           <h3>
             <a href="{{ episode.url }}">
               {{ episode.data.title }}

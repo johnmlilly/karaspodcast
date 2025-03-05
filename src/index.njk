@@ -55,7 +55,7 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
       <h2>Listen to the foundational episode series first!</h2>
       {%- for episode in collections.episode | excludeIntroByTag -%}
         <div class="episode-list {% if loop.last %} episode-list--last{% endif %}">
-          <span>{{ episode.data.episodeNumber }}</span>
+          <span>{{ episode.data.episodeNumber | padEpisodeNumber }}</span>
           <h3>{{ episode.data.title }}</h3>
           <a href="{{ episode.url }}" aria-label="Click to play episode {{ episode.data.title}}">
             <svg
@@ -104,7 +104,6 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
     </div>
   </div>
 </section>
-<section>
   {% if collections.episode and collections.episode.length > 8 %}
     <section>
       <h2 class="recent-episodes-heading ">RECENT EPISODES</h2>
@@ -113,7 +112,6 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
       </div>
     </section>
   {% endif %}
-</section>
 <section class="px-0 open-quote">
   <div class="testimonials">
     <div class="testimonial-slider">
