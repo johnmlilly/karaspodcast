@@ -1,7 +1,7 @@
 ---
-title: "Grace Begins in You: How Your Thoughts Shape Your Faith & Life"
+title: "Grace Begins in You: How Your Thoughts Shape Your Faith & Life (Coming soon!)"
 host: Kara Loryn Lilly
-date: 2025-02-08
+date: 2025-03-12
 description: Check back soon!
 image: /assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg
 duration: 00:32:15
