@@ -3,9 +3,7 @@ title: "Intro Episode: Welcome to The Everything is Grace Podcast!"
 host: Kara Loryn Lilly
 date: 2025-02-26
 description: Kara introduces the Everything is Grace podcast and shares the
-  story behind how it started and her hopes for where it will go.ddddddddddKara
-  introduces the Everything is Grace podcast and shares the story behind how it
-  started and her hopes for where it will go.dddddddddd
+  story behind how it started and her hopes for where it will go.
 image: /assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg
 duration: 00:11:20
 episodeNumber: Intro
