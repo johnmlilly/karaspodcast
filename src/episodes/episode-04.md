@@ -5,7 +5,7 @@ date: "2025-02-22"
 description: "Kara uncovers the small, often unnoticed moments of grace in daily life, encouraging listeners to see beauty in the ordinary."
 image: "/assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg"
 duration: "00:30:00"
-episodeNumber: "04"
+episodeNumber: 4
 audioFile: "/assets/audio/episode-4.mp3"
 tags: ["daily-life", "grace", "mindfulness"]
 ---
