@@ -1,7 +1,7 @@
 ---
 title: How I Began to Find God in Everything
 host: Kara Loryn Lilly
-date: 2025-02-01
+date: 2025-03-05
 description: "In the inaugural episode of 'Everything is Grace,' Kara Lilly
   shares her journey of faith and the significance of recognizing God's grace in
   every aspect of life. "
