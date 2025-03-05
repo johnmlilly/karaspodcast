@@ -1,8 +1,8 @@
 ---
 title: "Grace in Relationships: Discovering God’s Hand in Vocation, Family, and
-  Friendship"
+  Friendship (Coming Soon!)"
 host: Kara Loryn Lilly
-date: 2025-02-15
+date: 2025-03-19
 description: Kara reflects on how grace transforms relationships, from
   friendships to family ties, with stories and tips for fostering connection.
 image: /assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg
