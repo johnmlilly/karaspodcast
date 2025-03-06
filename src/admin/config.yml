@@ -24,7 +24,7 @@ collections:
       - { label: "Cover Art", name: "image", widget: "image", choose_url: false, hint: "Max file upload size is 1MB", media_library: { max_file_size: 1048576 } } # 1MB max for images
       - { label: "Duration", name: "duration", widget: "string", required: true, hint: "Format: HH:MM:SS or MM:SS (e.g., 00:11:20)" }
       - { label: "Episode Number", name: "episodeNumber", widget: "number", required: true, hint: "Enter  episode number; will display as 01, 02, 03, etc. on website." }
-      - { label: "Audio File", name: "audioFile", widget: "file", required: false }
+      - { label: "Audio Player", name: "audioEmbed", widget: "text", required: false, hint: "Paste the iframe embed code for the episode (e.g., from Apple Podcasts, Spotify, or YouTube)." }
       - { label: "Spotify URL", name: "spotify", widget: "string" }
       - { label: "YouTube URL", name: "youtube", widget: "string" }
       - { label: "Apple Podcasts URL", name: "apple", widget: "string" } 
