@@ -6,7 +6,7 @@ description: Check back soon!
 image: /assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg
 duration: 00:32:15
 episodeNumber: 2
-audioFile: /assets/audio/episode-2.mp3
+audioEmbed: Coming soon!
 spotify: www.spotify.com
 youtube: www.youtube.com
 apple: www.apple.com

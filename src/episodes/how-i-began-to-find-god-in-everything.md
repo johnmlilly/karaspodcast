@@ -8,7 +8,7 @@ description: "In the inaugural episode of 'Everything is Grace,' Kara Lilly
 image: /assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg
 duration: 00:25:12
 episodeNumber: 1
-audioFile: https://open.spotify.com/episode/2uSaYgF4cpar4PTYi9Mc3B?si=zWEJQ3G7RhyENlD-sP2ULg
+audioEmbed: <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175" style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.podcasts.apple.com/us/podcast/01-how-i-began-to-find-god-in-everything/id1798885593?i=1000697789418"></iframe>
 spotify: https://open.spotify.com/episode/2uSaYgF4cpar4PTYi9Mc3B?si=zWEJQ3G7RhyENlD-sP2ULg
 youtube: https://youtu.be/niS7OvHzSyA
 apple: https://podcasts.apple.com/us/podcast/the-everything-is-grace-podcast/id1798885593?i=1000697789418

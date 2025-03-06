@@ -8,7 +8,7 @@ description: Kara reflects on how grace transforms relationships, from
 image: /assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg
 duration: 00:28:45
 episodeNumber: 3
-audioFile: /assets/audio/episode-3.mp3
+audioEmbed: Coming soon!
 spotify: www.spotify.com
 youtube: www.youtube.com
 apple: www.apple.com
