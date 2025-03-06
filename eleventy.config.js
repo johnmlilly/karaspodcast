@@ -9,6 +9,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/assets');
   eleventyConfig.addPassthroughCopy('./src/scripts');
   eleventyConfig.addPassthroughCopy('./src/admin');
+  eleventyConfig.addPassthroughCopy("./src/robots.txt");
 
   // Watch images for the image pipeline.
   eleventyConfig.addWatchTarget("./src/assets/**/*.{svg,webp,png,jpg,jpeg,gif}");
