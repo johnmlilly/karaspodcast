@@ -303,8 +303,8 @@ section,
 /* Hamburger icon */
 .hamburger {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  height: 2px;
   background: var(--clr-primary-forest);
   position: relative;
 }
@@ -358,8 +358,8 @@ section,
 }
 
 .primary-header svg {
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
 }
 
 .primary-header a:not([role="button"]) {
@@ -390,6 +390,11 @@ section,
 
     .primary-header div:last-child svg {
       fill: var(--clr-primary-forest);
+    }
+
+    .primary-header div:last-child svg:hover {
+      fill: var(--clr-primary-blush);
+      transition: all 1s;
     }
 
 .primary-header div p {
@@ -434,7 +439,7 @@ section,
 .primary-navigation-mobile {
   display: flex;
   align-items: center;
-  margin: 0.75rem 1rem;
+  margin: 1.5rem 1rem;
   justify-content: space-between;
   flex-direction: row-reverse;
 }
@@ -495,6 +500,11 @@ section,
   .primary-header div:last-child {
     display: none;
   }
+
+  /* Add extra margin to host section when episode collection is hidden */
+    .mb-small-2 {
+      margin-bottom: 2rem;
+    }
 }
 
 .page-header {
@@ -582,6 +592,22 @@ button:disabled,
   align-items: center;
   gap: 0.5rem;
 }
+
+@media (max-width: 600px) {
+.footer__cta div:first-child {
+    border-bottom: 1px solid var(--clr-primary-blush);
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+
+  .footer__cta div:last-child {
+    border-top: 1px solid var(--clr-primary-blush);
+    padding-top: 2rem;
+    width: 100%;
+  }
+}
+
+
 
 .footer__cta h2 {
   font-size: var(--fs-600);
@@ -1136,7 +1162,8 @@ button:disabled,
 
 .instagram-profile--follow a {
   text-decoration: none;
-  color: var(--clr-primary-blush)
+  color: var(--clr-primary-blush);
+  font-family: var(--ff-sub-heading);
 }
 
 /* //////////////////////
