@@ -177,72 +177,6 @@ section,
 .footer-container {
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
-
-
-/* //////////////////////
-  Utility Classes
-  /////////////////////// */
-
-/* select all direct childen of .flow
-   and add margin to the top for proper
-   spacing */
-   
-.bg-background-secondary-300 {
-  background-color: var(--clr-accent-sand);
-}
-
-.margin-block-3 {
-  margin-block: 3rem;
-}
-
-.pb-0 {
-  padding-bottom: 0;
-}
-
-.px-0 {
-  padding-inline: 0;
-}
-
-.flow > *:where(:not(:first-child)) {
-  margin-top: var(--flow-spacer, 1em);
-}
-
-.container {
-  margin-inline: auto;
-  padding-inline: 1.5em;
-  max-width: 72rem;
-}
-
-.container--narrow {
-  max-width: 65rem;
-}
-
-.flex-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap, 1em);
-}
-
-.text-center {
-  text-align: center;
-}
-
-/* typgraphy */
-
-.article-title,
-.section-title {
-  color: var(--clr-primary-500);
-}
-
-.article-title {
-  font-size: var(--fs-700);
-}
-
-.section-title {
-  font-size: var(--fs-600);
-}
-
-
 /* //////////////////////
   Header
   /////////////////////// */
@@ -607,8 +541,6 @@ button:disabled,
   }
 }
 
-
-
 .footer__cta h2 {
   font-size: var(--fs-600);
 }
@@ -638,27 +570,31 @@ button:disabled,
   padding: 0;
 }
 
-.hero-image {
-  width: 100%;
-  object-fit: cover;
-}
-
+/* Center the logo over the hero image */
 .hero-content {
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 20%;
+  /* Center horizontally */
   transform: translate(-50%, -50%);
+  /* Center both vertically and horizontally */
   text-align: center;
   z-index: 1;
 }
 
-.hero-content h1 {
-  color: var(--clr-secondary-200);
-  letter-spacing: 2px;
+/* Style the SVG logo */
+.hero-logo {
+  width: clamp(150px, 40vw, 400px);  
+  /* Maintain aspect ratio */
 }
 
-.hero-content h1 span {
-  font-size: 2.5rem;
+/* Mobile (below 992px) */
+@media (max-width: 991px) {
+  .hero-content {
+    /* Keep centered vertically */
+    left: 25%;
+    /* Maintain centering */
+  }
 }
 
 .episode-feature {
@@ -1335,19 +1271,6 @@ section, .section {
     height: 850px;
   }
 
-  .hero-content {
-    left: 20%;
-  }
-
-  .hero-content h1 {
-    font-size: var(--fs-700);
-  }
-
-  .hero-content h1 span {
-    display: inline-block;
-    font-size: 8rem;
-  }
-
     .host-profile--background, .guest-contact-section {
       background-attachment: fixed;
     }
@@ -1399,4 +1322,64 @@ section, .section {
   .primary-header div:last-child, .primary-header div:first-child {
       justify-content: center;
     }
+}
+
+/* //////////////////////
+  Utility Classes
+  /////////////////////// */
+
+/* select all direct childen of .flow
+   and add margin to the top for proper
+   spacing */
+
+.bg-background-secondary-300 {
+  background-color: var(--clr-accent-sand);
+}
+
+.margin-block-3 {
+  margin-block: 3rem;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.px-0 {
+  padding-inline: 0;
+}
+
+.flow>*:where(:not(:first-child)) {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.container {
+  margin-inline: auto;
+  padding-inline: 1.5em;
+  max-width: 72rem;
+}
+
+.container--narrow {
+  max-width: 65rem;
+}
+
+.flex-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, 1em);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
