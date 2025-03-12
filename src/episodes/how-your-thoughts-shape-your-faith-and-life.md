@@ -17,7 +17,7 @@ audioEmbed: <iframe allow="autoplay *; encrypted-media *; fullscreen *;
   allow-top-navigation-by-user-activation"
   src="https://embed.podcasts.apple.com/us/podcast/02-grace-begins-in-you-how-your-thoughts-shape-your/id1798885593?i=1000698842492"></iframe>
 spotify: https://open.spotify.com/episode/3Vqtq7aydGNnnTOea76sY7?si=4ySrCO7ETx6xaVYTskF5Og&nd=1&dlsi=3316afb2c4474c47
-youtube: https://www.youtube.com/@karalorynlilly/videos
+youtube: https://youtu.be/zqBvoC9hL5M
 apple: https://podcasts.apple.com/us/podcast/02-grace-begins-in-you-how-your-thoughts-shape-your/id1798885593?i=1000698842492
 tags:
   - grace
