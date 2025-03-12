@@ -26,7 +26,9 @@ tags:
 ---
 In this episode, Kara dives into the topic of mindfulness as a Catholic and Christian. How does self-awareness and seeking personal growth lead to a fuller and deeper relationship with the Lord? Listen to find out!
 
-**Reflection/Journal Questions:**
+
+
+### Reflection/Journal Questions:
 
 1. What thoughts are shaping my life right now? Are they rooted in truth or fear?
 2. Where is God’s grace already at work in me that I might not be seeing?
@@ -36,23 +38,17 @@ In this episode, Kara dives into the topic of mindfulness as a Catholic and Chri
 
 Check out these resources mentioned in the episode:
 
-[⁠The Mindful Catholic by Dr. Gregory Bottaro⁠](https://amzn.to/41KC0pk)
-
-[⁠Metanoia Catholic⁠](https://www.metanoiacatholic.com/)
-
-[⁠Lisa Canning⁠](https://lisacanning.ca/)
-
-[⁠Story of A Soul: The Autobiography of St. Therese⁠](https://amzn.to/3DCCnKP)
-
-[⁠Ignatius Catholic Study Bible⁠](https://amzn.to/41KsjY4)
-
-[⁠Blessed is She Shop⁠](https://blessedisshe.net/discount/KARA10?ref=KARALILLY) (Use code KARA10 for 10% off)
-
-[⁠Crunchi⁠](https://crunchi.com/?als=KaraLilly) ( Use [⁠THIS LINK⁠](https://crunchi.com/?als=KaraLilly) and the code ADVOCATE10 for 10% off your first Crunchi order)
+* [⁠The Mindful Catholic by Dr. Gregory Bottaro⁠](https://amzn.to/41KC0pk)
+* [⁠Metanoia Catholic⁠](https://www.metanoiacatholic.com/)
+* [⁠Lisa Canning⁠](https://lisacanning.ca/)
+* [⁠Story of A Soul: The Autobiography of St. Therese⁠](https://amzn.to/3DCCnKP)
+* [⁠Ignatius Catholic Study Bible⁠](https://amzn.to/41KsjY4)
+* [⁠Blessed is She Shop⁠](https://blessedisshe.net/discount/KARA10?ref=KARALILLY) (Use code KARA10 for 10% off)
+* [⁠Crunchi⁠](https://crunchi.com/?als=KaraLilly) ( Use [⁠THIS LINK⁠](https://crunchi.com/?als=KaraLilly) and the code ADVOCATE10 for 10% off your first Crunchi order)
 
 
 
-Don’t forget to follow on Instagram!
+**Don’t forget to follow on Instagram!**
 
 [⁠@karalorynlilly⁠](https://www.instagram.com/karalorynlilly/)
 
