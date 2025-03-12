@@ -33,6 +33,7 @@ In this episode, Kara dives into the topic of mindfulness as a Catholic and Chri
 3. How can I shift my mindset to be more open to God’s movement in my life?
 
 
+
 Check out these resources mentioned in the episode:
 
 [⁠The Mindful Catholic by Dr. Gregory Bottaro⁠](https://amzn.to/41KC0pk)
@@ -48,7 +49,6 @@ Check out these resources mentioned in the episode:
 [⁠Blessed is She Shop⁠](https://blessedisshe.net/discount/KARA10?ref=KARALILLY) (Use code KARA10 for 10% off)
 
 [⁠Crunchi⁠](https://crunchi.com/?als=KaraLilly) ( Use [⁠THIS LINK⁠](https://crunchi.com/?als=KaraLilly) and the code ADVOCATE10 for 10% off your first Crunchi order)
-
 
 
 
