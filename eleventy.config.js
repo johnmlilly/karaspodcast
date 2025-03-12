@@ -81,6 +81,7 @@ export default async function(eleventyConfig) {
   });
   
   eleventyConfig.addTemplateFormats("njk");
+  eleventyConfig.addTemplateFormats("html");
 
     // Output folders
     return {
