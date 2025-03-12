@@ -527,6 +527,21 @@ button:disabled,
   gap: 0.5rem;
 }
 
+.footer__cta div:first-child {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer__cta div:first-child svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--clr-primary-blush);
+}
+
+.footer__cta div:first-child span {
+  text-transform: uppercase;
+}
+
 @media (max-width: 600px) {
 .footer__cta div:first-child {
     border-bottom: 1px solid var(--clr-primary-blush);
@@ -669,18 +684,29 @@ button:disabled,
   line-height: 1.6;
 }
 
+.podcast-icons-container {
+  display: flex;
+  gap: 6rem;
+  justify-content: center;
+}
+
 .podcast-icons {
   padding-block: 2rem;
   font-size: 2rem;
 }
 
+.podcast-icons div:nth-child(2) {
+  display: flex;
+  gap: 1rem;
+}
+
 .podcast-icons h3 {
   padding-bottom: .75rem;
-  font-size: var(--fs-500);
+  font-size: var(--fs-400);
   font-weight: var(--fw-400);
   color: var(--clr-primary-blush);
   text-transform: uppercase;
-  font-family: var(--ff-body);
+  font-family: var(--ff-sub-heading);
 }
 
 .podcast-icons svg {
@@ -1074,34 +1100,6 @@ button:disabled,
   position: relative;
 }
 
-/* Optional: Overlay a clickable area to ensure the link works */
-.instagram-profile {
-  color: var(--clr-primary-blush);
-  padding-block: 0 1.5rem;
-  text-align: center;
-}
-
-.instagram-profile--follow {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  font-size: var(--fs-default);
-  padding-block: 0.5rem 0;
-  text-transform: uppercase;
-}
-
-.instagram-profile--follow svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--clr-primary-blush);
-}
-
-.instagram-profile--follow a {
-  text-decoration: none;
-  color: var(--clr-primary-blush);
-  font-family: var(--ff-sub-heading);
-}
-
 /* //////////////////////
  Form Styling
   /////////////////////// */
@@ -1254,6 +1252,7 @@ section, .section {
   border-left: 1px solid var(--clr-primary-blush);
   padding-left: 6rem;
 }
+
 
 .primary-navigation {
   gap: 4rem;
