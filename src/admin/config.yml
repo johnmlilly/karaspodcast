@@ -45,8 +45,8 @@ collections:
             - grace
   - name: "testimonials"
     label: "Testimonials"
-    folder: "src/testimonials" # Directory for testimonial files
-    create: true # Allow creating new testimonials
+    folder: "src/testimonials"
+    create: true
     slug: "{{slug}}" # Generate URL-friendly slugs from names
     fields: # Fields for testimonials
       - { label: "Quote", name: "quote", widget: "text", required: true }
