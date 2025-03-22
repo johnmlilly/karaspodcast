@@ -156,10 +156,21 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
           <label for="topic">Topic of Discussion</label>
           <textarea id="topic" name="topic" required placeholder="TOPIC OF DISCUSSION">
           </textarea>
-          <div class="cf-turnstile" data-sitekey="0x4AAAAAAA-x6qNFD5klJ4Tx"></div>
-           <button class="btn--secondary" type="submit">SUBMIT</button>
+				  <div id="turnstile-widget" style="padding-top: 20px;" aria-label="Cloudflare Turnstile CAPTCHA verification"></div>
+          <button class="btn--secondary" type="submit">SUBMIT</button>
         </div>
       </div>
     </form>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_turnstileCb" defer></script>
+    <script>
+      function _turnstileCb() {
+          console.debug('_turnstileCb called');
+
+          turnstile.render('#turnstile-widget', {
+            sitekey: '0x4AAAAAAA-x6qNFD5klJ4Tx',
+            theme: 'light',
+          });
+      }
+      </script>
   </div>
 </section>
