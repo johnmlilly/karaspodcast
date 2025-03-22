@@ -43,3 +43,11 @@ collections:
             - faith
             - relationships
             - grace
+  - name: "testimonials"
+    label: "Testimonials"
+    folder: "src/testimonials" # Directory for testimonial files
+    create: true # Allow creating new testimonials
+    slug: "{{slug}}" # Generate URL-friendly slugs from names
+    fields: # Fields for testimonials
+      - { label: "Quote", name: "quote", widget: "text", required: true }
+      - { label: "Name", name: "name", widget: "string", required: true }
