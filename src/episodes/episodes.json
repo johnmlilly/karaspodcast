@@ -1,4 +1,4 @@
 {
-    "layout": "episode.njk",
+    "layout": "partials/episode.njk",
     "tags": "episode"
 }
