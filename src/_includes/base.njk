@@ -25,11 +25,11 @@
         {% endcss %}
     </head>
     <body>
-        {% include "baseheader.njk" %}
+        {% include "layouts/baseheader.njk" %}
         <main>
             {{ content | safe }}
         </main>
-        {% include "basefooter.njk" %}
+        {% include "layouts/basefooter.njk" %}
         <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
         <script type="module" src="/scripts/slider.js" defer></script>
     </body>

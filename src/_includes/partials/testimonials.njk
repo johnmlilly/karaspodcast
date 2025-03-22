@@ -1,0 +1,12 @@
+<div class="testimonials">
+  <div class="testimonial-slider">
+    <ul class="slider">
+      {%- for testimonial in collections.testimonials -%}
+        <li>
+          <div>"{{ testimonial.data.quote }}"</div>
+          <p>{{ testimonial.data.name }}</p>
+        </li>
+      {%- endfor -%}
+    </ul>  
+  </div>
+</div>

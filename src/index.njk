@@ -120,25 +120,12 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
     <section>
       <h2 class="recent-episodes-heading ">RECENT EPISODES</h2>
       <div class="recent-episodes">
-        {% include "recent-episodes.njk" %}
+        {% include "partials/recent-episodes.njk" %}
       </div>
     </section>
   {% endif %}
 <section class="px-0 open-quote">
-  <div class="testimonials">
-    <div class="testimonial-slider">
-      <ul class="slider">
-        <li>
-            <div>"Sometimes it's hard for me to see God's hand in everything in my life and to "count it all joy", but Kara discussing her own faith journey helps me to feel seen and to remember that God is in every moment of everyday."</div>
-            <p>Crystal G.</p>
-          </li>
-          <li>
-            <div>"Kara is like your BFF in faith, guiding you with warmth, wisdom and authenticity to discover God’s presence and purpose in every part of your journey."</div>
-            <p>Chelsea Q.</p>
-          </li>
-        </ul>  
-    </div>
-  </div>
+  {% include "partials/testimonials.njk" %}
 </section>
 <section class="guest-contact-section bg-lazy-image">
   <div id="contact" class="guest-contact">
