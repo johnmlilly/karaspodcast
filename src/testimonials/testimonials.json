@@ -1,0 +1,4 @@
+{
+    "layout": "partials/testimonials.njk",
+    "tags": "testimonials"
+}
