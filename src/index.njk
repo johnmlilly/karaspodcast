@@ -132,8 +132,14 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
     <h2>Be a Guest on the Podcast!</h2>
     <p>Do you have a story of God’s grace to share? Are you passionate about faith-filled living, relationships, personal growth, or Catholic life? I’d love to hear from you!</p>
     <div class="form-container">
-    <form netlify>
+    <form netlify netlify-honeypot="bot-field">
       <div class="form-group" method="POST" name="contact">
+            <div class="sr-only">
+              <label>
+                Enter your phone number (optional):
+                <input name="bot-field" />
+              </label>
+            </div>
           <div>
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="fullName" required minlength="2" pattern="[A-Za-z\s]+" placeholder="FULL NAME">
@@ -156,21 +162,9 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
           <label for="topic">Topic of Discussion</label>
           <textarea id="topic" name="topic" required placeholder="TOPIC OF DISCUSSION">
           </textarea>
-				  <div id="turnstile-widget" style="padding-top: 20px;" aria-label="Cloudflare Turnstile CAPTCHA verification"></div>
           <button class="btn--secondary" type="submit">SUBMIT</button>
         </div>
       </div>
     </form>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=_turnstileCb" defer></script>
-    <script>
-      function _turnstileCb() {
-          console.debug('_turnstileCb called');
-
-          turnstile.render('#turnstile-widget', {
-            sitekey: '0x4AAAAAAA-x6qNFD5klJ4Tx',
-            theme: 'light',
-          });
-      }
-      </script>
   </div>
 </section>
