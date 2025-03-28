@@ -15,6 +15,7 @@ collections:
     create: true # Allow creating new episodes
     slug: "{{slug}}" # Generate URL-friendly slugs from titles
     preview_path: episodes/{{slug}} # Preview URL of the episode
+    summary: "{{episodeNumber}} {{title}} - {{date | date('MMMM DD, YYYY')}} – {{body | truncate(20, '***')}}"
     fields: # Fields matching your front matter
       - { label: "Title", name: "title", widget: "string", required: true }
       - { label: "Host", name: "host", widget: "string", required: true }
@@ -43,15 +44,14 @@ collections:
             - faith
             - relationships
             - grace
-        summary: "{{episodeNumber}} {{title}} - {{date | date('MMMM DD, YYYY')}} – {{body | truncate(20, '***')}}"
         sortable_fields: ["title", "date"]
   - name: "testimonials"
     label: "Testimonials"
     folder: "src/testimonials"
     create: true
     slug: "{{slug}}" # Generate URL-friendly slugs from names
+    summary: "{{name}} | {{date | date('MMMM DD, YYYY')}}"
     fields: # Fields for testimonials
       - { label: "Quote", name: "quote", widget: "text", required: true }
       - { label: "Name", name: "name", widget: "string", required: true }
       - { label: "Date Added", name: "date", widget: "datetime", required: true, format: "YYYY-MM-DD" }
-    summary: "{{quote}} | {{date | date('MMMM DD, YYYY')}}"
