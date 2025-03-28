@@ -43,6 +43,8 @@ collections:
             - faith
             - relationships
             - grace
+        summary: "{{episodeNumber}} {{title}} - {{date | date('MMMM DD, YYYY')}} – {{body | truncate(20, '***')}}"
+        sortable_fields: ["title", "date"]
   - name: "testimonials"
     label: "Testimonials"
     folder: "src/testimonials"
@@ -51,3 +53,5 @@ collections:
     fields: # Fields for testimonials
       - { label: "Quote", name: "quote", widget: "text", required: true }
       - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Date Added", name: "date", widget: "datetime", required: true, format: "YYYY-MM-DD" }
+    summary: "{{quote}} | {{date | date('MMMM DD, YYYY')}}"
