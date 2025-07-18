@@ -585,6 +585,10 @@ button:disabled,
   padding: 0;
 }
 
+.hero-image {
+  width: 100%;
+}
+
 /* Center the logo over the hero image */
 .hero-content {
   position: absolute;
