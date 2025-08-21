@@ -287,8 +287,9 @@ section,
 }
 
 .primary-header img {
-  width: 400px;
+  width: 350px;
   object-fit: cover;
+  padding-inline: 1rem;
 }
 
 .primary-header svg {
@@ -1098,10 +1099,14 @@ section, .section {
 
 .primary-header {
   padding: 2rem 5rem;
+  max-width: 1280px;
+  margin-inline: auto;
 }
 
 .primary-header div p {
   text-align: left;
+  font-size: 10px;
+  color: var(--clr-black-200);
 }
 
   .hero {
