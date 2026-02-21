@@ -1,11 +1,16 @@
-{%- for episode in collections.episode | excludeIntroByTag | reverse -%}
+{%- for episode in podcast -%}
     <div class="recent-episodes--cards">
-      <img src="{{ episode.data.image }}" alt="{{ episode.data.title }}" />
-        <span>EPISODE {{ episode.data.episodeNumber | padEpisodeNumber }}</span>
+      <img src="{{ episode.image }}" alt="{{ episode.title }}" />
+        <span>EPISODE {{ episode.episodeNumber | padEpisodeNumber }}</span>
           <h3>
             <a href="{{ episode.url }}">
-              {{ episode.data.title }}
+              {{ episode.title }}
             </a>
           </h3>
+          <div class="recent-episodes-cta-container">
+            <p>
+              <a href="{{ episode.url }}" class="listen-now">Listen Now &rarr;</a>
+            </p>
+          </div>
     </div>
 {%- endfor -%}
