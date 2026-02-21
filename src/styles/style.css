@@ -848,11 +848,23 @@ button:disabled,
   text-align: center;
   padding-block: 0 1.5rem;
 }
-
 .recent-episodes--cards {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  border: 1px solid var(--clr-primary-forest);
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: var(--clr-white);
+  box-shadow: 0 2px 6px rgba(102, 128, 107, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* hover effect for interactivity */
+.recent-episodes--cards:hover {
+  transform: translateY(-3px);
+  /* slight lift on hover */
+  box-shadow: 0 6px 12px rgba(102, 128, 107, 0.3);
 }
 
 .recent-episodes--cards h3 {
@@ -861,11 +873,38 @@ button:disabled,
 
 .recent-episodes--cards h3 a {
   text-decoration: none;
-  color: var(--clr-primary-blush);
 }
 
 .recent-episodes--cards h3 a:is(:hover, :focus) {
   text-decoration: underline;
+}
+.recent-episodes-cta-container {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.recent-episodes-cta-container p {
+  display: flex;
+}
+
+.recent-episodes--cards .listen-now {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: var(--fs-small);
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--clr-primary-forest);
+  color: #fff;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  margin-top: auto;
+}
+
+.recent-episodes--cards .listen-now:hover {
+  background-color: #556655;
+  /* slightly darker on hover */
 }
 
 .recent-episodes--cards span {
