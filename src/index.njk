@@ -17,13 +17,12 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
     <img src="/assets/episodes/EverythingIsGrace_PodcastCover_ForWeb.jpg" alt="Intro Episode Image">
       <div class="episode-feature__text">
         <div class="episode-feature__heading">
-          {%- for episode in collections.episode | onlyIntroByTag -%}  
-            <h2>{{ episode.data.title }}</h2>
-            <h3>{{ episode.data.host }}</h3>
+          {%- set featured = podcast | reverse | first -%}
+            <h2>{{ featured.title }}</h2>
+            <h3>Kara Loryn Lilly</h3>
         </div>
-            <p> {{ episode.data.description }} </p>
-            <p><a href="{{ episode.url }}">Listen Now &rarr; </a></p>
-         {%- endfor -%}
+            <p> Kara introduces the Everything is Grace podcast and shares the story behind how it started and her hopes for where it will go.</p>
+            <p><a href="{{ featured.url }}">Listen Now &rarr; </a></p>
         <audio controls>
           <source src="assets/episodes/karas-studio-EuqMV-composer-2025-2-27__3-13-16.mp4" type="audio/mpeg">
             Your browser does not support the audio element.
@@ -65,11 +64,11 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
   <div class="featured-episode">
     <div class="margin-block-3">
       <h2>Listen to the foundational episode series first!</h2>
-      {%- for episode in collections.episode | excludeIntroByTag -%}
+      {%- for episode in podcast | reverse  -%}
         <div class="episode-list {% if loop.last %} episode-list--last{% endif %}">
-          <span>{{ episode.data.episodeNumber | padEpisodeNumber }}</span>
-          <h3>{{ episode.data.title }}</h3>
-          <a href="{{ episode.url }}" aria-label="Click to play episode {{ episode.data.title}}">
+          <span>{{ episode.episodeNumber | padEpisodeNumber }}</span>
+          <h3>{{ episode.title }}</h3>
+          <a href="{{ episode.url }}" aria-label="Click to play episode {{ episode.title}}">
             <svg
               fill="#66806b"
               height="50px"
@@ -116,7 +115,7 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
     </div>
   </div>
 </section>
-  {% if collections.episode and collections.episode.length > 8 %}
+  {% if podcast.length > 2 %}
     <section>
       <h2 class="recent-episodes-heading ">RECENT EPISODES</h2>
       <div class="recent-episodes">
