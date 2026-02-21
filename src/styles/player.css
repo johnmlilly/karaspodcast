@@ -1,0 +1,19 @@
+
+.plyr__control {
+    color: var(--clr-primary-forest);
+    border-radius: 50%;
+    padding: 1rem;
+    outline: 1px solid var(--clr-primary-forest);
+}
+
+/* Pressed state */
+.plyr__control--pressed {
+    outline: 1px solid var(--clr-primary-forest);
+    border: 1px solid var(--clr-primary-forest);
+    transform: scale(0.95);
+}
+
+.plyr__control[data-plyr='mute'], .plyr__control[data-plyr='mute'].plyr__control--pressed {
+    outline: none;
+    border: none;
+}
