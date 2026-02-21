@@ -10,6 +10,8 @@
         <link rel="stylesheet" href="/styles/style.css">
         <link rel="icon" type="image/x-icon" href="/assets/logo/klp_favicon.png">
         <script defer data-domain="karalorynlilly.com" src="https://plausible.io/js/script.file-downloads.outbound-links.js"></script>
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+        <link rel="stylesheet" href="/styles/player.css">
         <script type="text/javascript">
             (function(c,l,a,r,i,t,y){
                 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -40,5 +42,17 @@
         {% include "layouts/basefooter.njk" %}
         <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js" defer></script>
         <script type="module" src="/scripts/slider.js" defer></script>
-    </body>
+        <!-- Plyr JS -->
+        <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+        <script>
+            // Initialize Plyr on the audio element
+            const player = new Plyr('#player', {
+            controls: ['play', 'progress', 'duration', 'mute'],
+            });
+
+            // Expose to console for testing
+            window.player = player;
+        </script>    
+  </body>
 </html>
