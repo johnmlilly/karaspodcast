@@ -22,7 +22,7 @@
 
   --clr-primary-forest: #66806b;
   --clr-primary-blush: #D4987C;
-  
+  --plyr-color-main: var(--clr-primary-forest);
   --clr-secondary-olive: #C4CCB0;
   --clr-secondary-lace: #FBDED8;
   --clr-secondary-200: #724027;
