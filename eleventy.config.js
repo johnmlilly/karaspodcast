@@ -18,12 +18,13 @@ export default async function(eleventyConfig) {
   
   // Social Media Meta Data
   eleventyConfig.addPlugin(metagen);
-    
+
+
   //Eleventy Image Plugin
   // Image optimization: https://www.11ty.dev/docs/plugins/image/#eleventy-transform
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     // Output formats for each image.
-    formats: ["webp", "auto"],
+    formats: ["webp"],
 
     // widths: ["auto"],
 
@@ -43,27 +44,6 @@ export default async function(eleventyConfig) {
 
     // Get current year for footer
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-
-   // Format blog date into readable format
-  eleventyConfig.addFilter("postDate", (date) => {
-    // Handle both Date objects and ISO strings (e.g., "2025-02-26")
-    if (date instanceof Date) {
-      return DateTime.fromJSDate(date).toLocaleString(DateTime.DATE_MED);
-    } else if (typeof date === "string") {
-      return DateTime.fromISO(date).toLocaleString(DateTime.DATE_MED);
-    }
-    return "Invalid Date"; // Fallback for invalid input
-  });
-  
-  // Filter to exclude episodes with the "intro" tag
-  eleventyConfig.addFilter('excludeIntroByTag', (collection, introTag = "intro") => {
-    return collection.filter(episode => !episode.data.tags || !episode.data.tags.includes(introTag));
-  });
-
-  // Filter to show only episodes with the "intro" tag
-  eleventyConfig.addFilter('onlyIntroByTag', (collection, introTag = "intro") => {
-    return collection.filter(episode => episode.data.tags && episode.data.tags.includes(introTag));
-  });
 
   // Filter to pad numbers with leading zeros (e.g., 1 → 01, 10 → 10)
   eleventyConfig.addFilter("padEpisodeNumber", (number) => {
