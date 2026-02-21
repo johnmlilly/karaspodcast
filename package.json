@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "These are the starting files for Kara's Podcast website at www.karalorynlilly.com.",
   "type": "module",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "start": "eleventy --serve --quiet",
     "build": "eleventy"
@@ -26,7 +26,10 @@
     "luxon": "^3.5.0"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^5.1.1",
+    "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@netlify/plugin-csp-nonce": "^1.4.0",
-    "a11y-slider": "^0.4.22"
+    "a11y-slider": "^0.4.22",
+    "fast-xml-parser": "^5.3.7"
   }
 }
