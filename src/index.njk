@@ -131,7 +131,7 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
     <h2>Be a Guest on the Podcast!</h2>
     <p>Do you have a story of God’s grace to share? Are you passionate about faith-filled living, relationships, personal growth, or Catholic life? I’d love to hear from you!</p>
     <div class="form-container">
-    <form netlify netlify-honeypot="bot-field">
+    <form netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
       <div class="form-group" method="POST" name="contact">
             <div class="sr-only">
               <label>
@@ -161,6 +161,7 @@ description: 'Everything is Grace podcast explores God’s grace in life’s joy
           <label for="topic">Topic of Discussion</label>
           <textarea id="topic" name="topic" required placeholder="TOPIC OF DISCUSSION">
           </textarea>
+          <div data-netlify-recaptcha="true"></div>
           <button class="btn--secondary" type="submit">SUBMIT</button>
         </div>
       </div>
